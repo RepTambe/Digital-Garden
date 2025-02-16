@@ -9,4 +9,4 @@
 
 
 # Current Reads
-Current([[Currently Reading]])
+[[Currently Reading]]Current)
