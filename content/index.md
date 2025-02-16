@@ -1,5 +1,5 @@
 ---
-title: "# Welcome to My Digital Garden 🌱"
+title:
 ---
 # Welcome to My Digital Garden 🌱
 
