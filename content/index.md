@@ -2,7 +2,7 @@
 title:
 ---
 # Welcome to My Digital Garden 🌱
-
+![[makashima-reading.jpg]]
 Hello, thanks for stopping by.
 
 I'm [$Augment]! This is my personal knowledge base, where I share my thoughts, notes, and ideas.

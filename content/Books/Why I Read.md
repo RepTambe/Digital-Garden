@@ -9,4 +9,7 @@
 
 
 # Current Reads
-[[Currently Reading]]Current)
+[[Currently Reading|What I'm currently reading]]
+
+# Past Reads
+[[Past-Reads]]
