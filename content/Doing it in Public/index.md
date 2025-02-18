@@ -1,0 +1,33 @@
+---
+title: 
+tags:
+  - whoami
+  - resume
+---
+<img src="makashima-reading.jpg" alt="Makashima" style="float: right; margin: 10px; width: 300px;">
+# Welcome to My Digital Garden 🌱
+
+
+
+Hello, thanks for stopping by.
+
+I'm [[Whoami|Augment]] This is my personal knowledge base, where I share my thoughts, notes, and ideas.
+
+## Explore My Notes
+- [[Current Resume]]
+- [[Career]]
+- [[Projects]]
+- [[Books]]
+- [[Learning Resources]]
+- [[Whoami|cmd whoami]]
+
+## Recent Updates
+- [[2023-10-15]]: Added notes on OPNSense.
+- [[2023-10-10]]: Started my Zettelkasten journey.
+
+## About Me
+Feel free to explore and connect with me!
+
+LinkedIN: **https://www.linkedin.com/in/augustine-tambe/**
+
+
