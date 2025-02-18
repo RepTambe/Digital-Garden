@@ -28,6 +28,6 @@ I'm [[Whoami|Augment]] This is my personal knowledge base, where I share my thou
 ## About Me
 Feel free to explore and connect with me!
 
-LinkedIN: **https://www.linkedin.com/in/augustine-tambe/**
+LinkedIn: **https://www.linkedin.com/in/augustine-tambe/**
 
 
