@@ -4,7 +4,7 @@ tags:
   - whoami
   - resume
 ---
-<img src="makashima-reading.jpg" alt="Makashima" style="float: right; margin: 10px; width: 300px;">
+<img src="assets/images/makashima-reading.jpg" alt="Makashima" style="float: right; margin: 10px; width: 300px;">
 # Welcome to My Digital Garden 🌱
 
 
