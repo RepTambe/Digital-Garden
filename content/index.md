@@ -26,7 +26,7 @@ I'm [[Whoami|Augment]] This is my personal knowledge base, where I share my thou
 - [[2023-10-10]]: Started my Zettelkasten journey.
 
 ## About Me
-Feel free to explore and connect with me!
+Feel free to explore and connect 
 
 LinkedIn: **https://www.linkedin.com/in/augustine-tambe/**
 
