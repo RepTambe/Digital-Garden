@@ -1,3 +1,33 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+// put your custom CSS here
+
+/* Use a serif font for body text */
+body {
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+}
+
+/* Use a monospace font for code and metadata */
+code, pre, .metadata {
+    font-family: 'Courier New', monospace;
+
+  }
+
+
+/* Pastel link colors */
+a {
+    color: #6C8EBF;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #4A6B8F;
+    text-decoration: underline;
+}
+
+/* Subtle background colors */
+body {
+    background-color: #F9F9F9;
+    color: #333;
+}
