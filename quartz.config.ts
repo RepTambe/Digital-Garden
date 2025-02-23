@@ -30,25 +30,24 @@ const config: QuartzConfig = {
       },
       colors: {
         lightMode: {
-          light: "#F5F7F2",         // Soft off-white (page background)
-          lightgray: "#D8DBD5",     // Muted sage gray (borders)
-          gray: "#9AA5A0",          // Subtle greenish-gray (graph links, heavier borders)
-          darkgray: "#2F3E46",      // Deep desaturated blue-green (body text)
-          dark: "#0D1B2A",          // Oxford Blue (header text and icons)
-          secondary: "#728C69",     // Sage green (link color, current graph node)
-          tertiary: "#3E5C50",      // Dark sage (hover states, visited graph nodes)
-          highlight: "rgba(165, 196, 163, 0.15)",  // Light pastel green (internal link background, highlighted text, code highlights)
-          textHighlight: "rgba(221, 229, 195, 0.5)",  // Soft pale sage (markdown highlighted text background)
-
+          light: "#F2F2F2", // Backg
+          lightgray: "#bcc0cc", // Code Backg
+          gray: "#8c8fa1", // Unread nodes and subtitles
+          darkgray: "#45485f", // Text
+          dark: "#4c4f69", // Code text
+          secondary: "#325738", // Links, title, and current node
+          tertiary: "#0E8390", // Visited nodes
+          highlight: "rgba(143, 159, 169, 0.15)",
+          textHighlight: "#fff23688",
         },
         darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
+          light: "#131829", // Backg
+          lightgray: "#70778F", // Code Backg
+          gray: "#686D82", // Unread nodes and subtitles
+          darkgray: "#cdd6f4", // Text
+          dark: "#D2DAF5", // Code text
+          secondary: "#a6e3a1", // Links, title, and current node
+          tertiary: "#89dceb", // Visited nodes
           highlight: "rgba(143, 159, 169, 0.15)",
           textHighlight: "#b3aa0288",
         },
