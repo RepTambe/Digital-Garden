@@ -7,7 +7,7 @@ tags:
 <img src="assets/images/makashima-reading.jpg" alt="Makashima" style="float: right; margin: 10px; width: 300px;">
    Welcome to My Digital Garden 🌱
 
-thanks for stopping by.
+thanks for stopping by
 
 I'm [[Whoami|$Augment]] This is my personal knowledge base, where I share my thoughts, notes, and ideas.
 
