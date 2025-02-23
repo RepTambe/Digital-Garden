@@ -22,7 +22,7 @@ const config: QuartzConfig = {
     generateSocialImages: false,
     theme: {
   fontOrigin: "googleFonts",
-  cdnCaching: true,
+  cdnCaching: false,
   typography: {
     header: "Orbitron",
     body: "Orbitron",

@@ -14,8 +14,8 @@ I'm [[Whoami|$Augment]] This is my personal knowledge base, where I share my tho
 ## Explore My Notes
 - [[Current Resume]]
 - [[Career]]
-- [[0 - Projects]]
-- [[0 - Books]]
+- [[0 - Projects|Projects]]
+- [[0 - Books|Books]]
 - [[Learning Resources]]
 - [[Whoami|whoami]]
 
