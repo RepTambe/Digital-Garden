@@ -14,14 +14,11 @@ I'm [[Whoami|$Augment]] This is my personal knowledge base, where I share my tho
 ## Explore My Notes
 - [[Current Resume]]
 - [[Career]]
-- [[Projects]]
-- [[Books]]
+- [[0 - Projects]]
+- [[0 - Books]]
 - [[Learning Resources]]
 - [[Whoami|whoami]]
 
-## Recent Updates
-- [[2023-10-15]]: Added notes on OPNSense.
-- [[2023-10-10]]: Started my Zettelkasten journey.
 
 ## About Me
 Feel free to explore and connect 
