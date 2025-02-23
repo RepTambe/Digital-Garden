@@ -21,38 +21,38 @@ const config: QuartzConfig = {
     defaultDateType: "created",
     generateSocialImages: false,
     theme: {
-      fontOrigin: "googleFonts",
-      cdnCaching: true,
-      typography: {
-        header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
-        code: "IBM Plex Mono",
-      },
-      colors: {
-        lightMode: {
-          light: "#F2F2F2", // Backg
-          lightgray: "#bcc0cc", // Code Backg
-          gray: "#8c8fa1", // Unread nodes and subtitles
-          darkgray: "#45485f", // Text
-          dark: "#4c4f69", // Code text
-          secondary: "#325738", // Links, title, and current node
-          tertiary: "#0E8390", // Visited nodes
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#fff23688",
-        },
-        darkMode: {
-          light: "#131829", // Backg
-          lightgray: "#70778F", // Code Backg
-          gray: "#686D82", // Unread nodes and subtitles
-          darkgray: "#cdd6f4", // Text
-          dark: "#D2DAF5", // Code text
-          secondary: "#a6e3a1", // Links, title, and current node
-          tertiary: "#89dceb", // Visited nodes
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#b3aa0288",
-        },
-      },
+  fontOrigin: "googleFonts",
+  cdnCaching: true,
+  typography: {
+    header: "Orbitron",
+    body: "Roboto Mono",
+    code: "IBM Plex Mono",
+  },
+  colors: {
+    lightMode: {
+      light: "#F2F2F2", // Background
+      lightgray: "#bcc0cc", // Code background, borders
+      gray: "#8c8fa1", // Unread nodes, subtitles
+      darkgray: "#45485f", // Body text
+      dark: "#4c4f69", // Code text
+      secondary: "#325738", // Links, titles, current node
+      tertiary: "#0E8390", // Visited nodes, accents
+      highlight: "rgba(143, 159, 169, 0.15)", // Highlight background
+      textHighlight: "#fff23688", // Highlighted text
     },
+    darkMode: {
+      light: "#131829", // Background
+      lightgray: "#70778F", // Code background, borders
+      gray: "#686D82", // Unread nodes, subtitles
+      darkgray: "#cdd6f4", // Body text
+      dark: "#D2DAF5", // Code text
+      secondary: "#a6e3a1", // Links, titles, current node
+      tertiary: "#89dceb", // Visited nodes, accents
+      highlight: "rgba(143, 159, 169, 0.15)", // Highlight background
+      textHighlight: "#b3aa0288", // Highlighted text
+    },
+  },
+},
   },
   plugins: {
     transformers: [
