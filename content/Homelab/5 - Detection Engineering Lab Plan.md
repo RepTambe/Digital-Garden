@@ -1,6 +1,5 @@
-kanban-plugin: basic
-title: Detection Engineering Lab Plan
----
+
+
 
 ## 📦 Phase 1: Foundation (Days 1–3)(07/24)
 
