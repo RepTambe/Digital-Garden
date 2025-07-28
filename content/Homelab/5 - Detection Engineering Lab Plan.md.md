@@ -2,14 +2,14 @@ kanban-plugin: basic
 title: Detection Engineering Lab Plan
 ---
 
-## 📦 Phase 1: Foundation (Days 1–3)
+## 📦 Phase 1: Foundation (Days 1–3)(07/24)
 
-- [ ] Log into Splunk UI and confirm data (`index=* | stats count by index`)
-- [ ] Identify key log sources: `WinEventLog:*`, `Sysmon`, `PowerShell`
-- [ ] Practice basic SPL queries
-- [ ] Pick 5 MITRE ATT&CK techniques to study
-- [ ] Create an Obsidian vault with the detection template
-- [ ] Review MITRE ATT&CK site and Navigator
+- [x] Log into Splunk UI and confirm data (`index=* | stats count by index`)
+- [x] Identify key log sources: `WinEventLog:*`, `Sysmon`, `PowerShell`
+- [x] Practice basic SPL queries
+- [x] Pick 5 MITRE ATT&CK techniques to study
+- [x] Create an Obsidian vault with the detection template
+- [x] Review MITRE ATT&CK site and Navigator
 
 ## ⚔️ Phase 2: Detecting Core Techniques (Days 4–10)
 
