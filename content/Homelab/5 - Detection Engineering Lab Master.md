@@ -12,10 +12,10 @@
 
 ## ⚔️ Phase 2: Detecting Core Techniques (Days 4–10)
 
-- [ ] Lab 1: PowerShell Execution (T1059.001)
-  - [ ] Simulate: `powershell.exe -EncodedCommand ...`
-  - [ ] Write SPL to detect it (EventCode 4688 + CommandLine)
-  - [ ] Save alert and document in vault
+- [x] Lab 1: PowerShell Execution (T1059.001)
+  - [x] Simulate: `powershell.exe -EncodedCommand ...`
+  - [x] Write SPL to detect it (EventCode 4688 + CommandLine)
+  - [x] Save alert and document in vault
 
 - [ ] Lab 2: Credential Dumping – Mimikatz (T1003.001)
   - [ ] Simulate PowerSploit Mimikatz
