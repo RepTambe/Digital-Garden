@@ -31,15 +31,11 @@ PS C:\AtomicREdTeam\atomics> Invoke-AtomicTest T1059.001 -TestNumbers 1
 
 ### Step 2 – Detect  Mimikatz in Splunk
 
-```
-PS C:\AtomicREdTeam\atomics> Invoke-AtomicTest T1059.001 -TestNumbers 1
-
-```
 [[Mimikatz - Splunk Query.png]]
 ### Step 3– Write Detection/Connect to Discord Alerts
 
 [[Mimikatz - Detection.png]]
 
 Webhook to DIscord -
-
+[[Mimikatz - actualshown -detection.png]]
 [[Mimikatz - Alert - Trigger.png]]
