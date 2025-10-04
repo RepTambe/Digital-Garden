@@ -2,4 +2,262 @@
 
 // put your custom CSS here
 
+/* ===========================================================
+   Nude Earth Theme for Quartz (Aug)
+   Palette: warm browns + muted greens, soft contrast
+   =========================================================== */
+
+/* ---------- Base palette (dark mode) ---------- */
+:root {
+  /* Backgrounds */
+  --bg:        #171513;  /* deep umber */
+  --bg-alt:    #201d1a;  /* card */
+  --bg-soft:   #25211e;
+
+  /* Text */
+  --text:      #eadfce;  /* sand */
+  --text-dim:  #cdbfa9;  /* muted sand */
+
+  /* Accents */
+  --accent:    #8fbf7a;  /* moss green */
+  --accent-2:  #b6d2a5;  /* pale moss */
+  --accent-3:  #8a5a44;  /* clay */
+
+  /* Borders / lines */
+  --line:      #3a322c;
+
+  /* UI */
+  --pill:      #2a2622;
+  --pill-text: #e7dccb;
+
+  /* Code */
+  --code-bg:   #211d19;
+  --code:      #e7dac7;
+
+  /* Callouts */
+  --info:      #3a5f5a;   /* teal moss */
+  --warn:      #7d5a2d;   /* toasted oak */
+  --note:      #4f3e31;   /* cocoa */
+
+  /* Sidebar widths */
+  --left-sidebar-width:  300px;
+  --right-sidebar-width: 320px;
+
+  /* Radius & shadows */
+  --radius: 10px;
+  --shadow: 0 4px 12px rgba(0,0,0,.35);
+}
+
+/* ---------- Light mode tweak (optional) ---------- */
+:root.light, [data-theme="light"] {
+  --bg:        #f6f2ec;
+  --bg-alt:    #efe7dd;
+  --bg-soft:   #e9e0d5;
+
+  --text:      #3a2f28;
+  --text-dim:  #5b4a3f;
+
+  --accent:    #4e7a5e;   /* deeper green */
+  --accent-2:  #7ea387;
+  --accent-3:  #b07f65;
+
+  --line:      #d4c7bb;
+
+  --pill:      #e9dfd5;
+  --pill-text: #3a2f28;
+
+  --code-bg:   #efe7dd;
+  --code:      #2f261f;
+
+  --info:      #6b9b8f;
+  --warn:      #c08a46;
+  --note:      #b69b88;
+}
+
+/* ---------- Global canvas ---------- */
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Cards / panels */
+.card, .popover, .tooltip, .callout, .search, .explorer, .toc, .tag, .pill, .header,
+.footer, .note, .sidebar, .graph, .table-wrapper, .component, .content {
+  background: var(--bg-alt);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+/* Links */
+a, .internal-link, .external-link {
+  color: var(--accent);
+  text-decoration: none;
+}
+a:hover, .internal-link:hover, .external-link:hover {
+  color: var(--accent-2);
+  text-decoration: underline;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 { color: var(--text); }
+h1 { letter-spacing: 0.5px; }
+h2, h3 { color: var(--text-dim); }
+
+/* Horizontal rule */
+hr {
+  border: 0;
+  border-top: 1px solid var(--line);
+  margin: 1.5rem 0;
+}
+
+/* ---------- Layout: force sidebars visible & sized ---------- */
+.page {
+  display: grid !important;
+  grid-template-columns: var(--left-sidebar-width) 1fr var(--right-sidebar-width) !important;
+  gap: 20px;
+}
+.page > .left {
+  grid-column: 1;
+  display: block !important;
+  min-width: calc(var(--left-sidebar-width) - 1px);
+}
+.page > .right {
+  grid-column: 3;
+  display: block !important;
+  min-width: calc(var(--right-sidebar-width) - 1px);
+}
+.page > .center {
+  grid-column: 2;
+}
+
+/* Don’t collapse sidebars on desktop */
+@media (max-width: 980px) {
+  .page {
+    grid-template-columns: 1fr !important;
+  }
+  .page > .left, .page > .right {
+    grid-column: auto;
+    min-width: 100%;
+  }
+}
+
+/* If Reader Mode toggled, keep sidebars visible */
+.reader-mode .left, .reader-mode .right {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* ---------- Explorer (left) ---------- */
+.explorer {
+  padding: 10px 12px;
+}
+.explorer .folder, .explorer .file {
+  border-radius: 8px;
+  padding: 6px 8px;
+  margin: 2px 0;
+}
+.explorer .folder:hover, .explorer .file:hover {
+  background: var(--bg-soft);
+}
+.explorer .active, .explorer .selected {
+  background: color-mix(in oklab, var(--accent) 22%, var(--bg) 78%);
+  color: var(--text);
+}
+
+/* ---------- TOC / Right rail ---------- */
+.toc {
+  padding: 12px;
+}
+.toc a { color: var(--accent); }
+.toc a:hover { color: var(--accent-2); }
+
+/* ---------- Search ---------- */
+.search {
+  padding: 10px;
+}
+.search input[type="text"] {
+  background: var(--bg-soft);
+  color: var(--text);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 8px 10px;
+}
+
+/* ---------- Pills / Tags ---------- */
+.tag, .pill {
+  background: var(--pill);
+  color: var(--pill-text);
+  border: 1px solid var(--line);
+  padding: 2px 8px;
+  border-radius: 999px;
+}
+.tag:hover, .pill:hover {
+  background: color-mix(in oklab, var(--accent) 15%, var(--pill) 85%);
+}
+
+/* ---------- Buttons / controls ---------- */
+button, .button, .btn {
+  background: var(--accent);
+  color: #0e0e0d;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+button:hover, .button:hover, .btn:hover {
+  background: var(--accent-2);
+}
+
+/* ---------- Code / pre ---------- */
+code {
+  background: var(--code-bg);
+  color: var(--code);
+  padding: 2px 5px;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+}
+pre code {
+  display: block;
+  padding: 12px;
+  overflow-x: auto;
+}
+
+/* ---------- Callouts ---------- */
+.callout[data-callout="info"]   { border-left: 4px solid var(--info); }
+.callout[data-callout="warning"]{ border-left: 4px solid var(--warn); }
+.callout[data-callout="note"]   { border-left: 4px solid var(--note); }
+.callout .callout-title {
+  color: var(--text);
+}
+
+/* ---------- Graph ---------- */
+.graph {
+  padding: 8px;
+}
+.graph canvas, .graph svg {
+  filter: saturate(0.8);
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  color: var(--text-dim);
+}
+.footer a { color: var(--accent-2); }
+.footer a:hover { color: var(--accent); }
+
+/* ---------- Small polish ---------- */
+img {
+  border-radius: 8px;
+  border: 1px solid var(--line);
+}
+blockquote {
+  border-left: 3px solid var(--accent-3);
+  background: var(--bg-soft);
+  padding: 8px 12px;
+  border-radius: 8px;
+}
 
