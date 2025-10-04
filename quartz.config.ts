@@ -1,5 +1,6 @@
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
+import { sharedPageComponents, defaultContentPageLayout, defaultListPageLayout } from "./quartz.layout"
 
 /**
  * Quartz 4 Configuration
