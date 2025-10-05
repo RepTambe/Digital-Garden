@@ -633,4 +633,4 @@ iframe.pdf {
   z-index: 9999;
 }
 
-@use "custom" as *;
+@import "./custom.scss";
