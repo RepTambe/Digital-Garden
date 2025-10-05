@@ -3,6 +3,7 @@
 @use "./variables.scss" as *;
 @use "./syntax.scss";
 @use "./callouts.scss";
+@use "custom" as *;
 
 html {
   scroll-behavior: smooth;
