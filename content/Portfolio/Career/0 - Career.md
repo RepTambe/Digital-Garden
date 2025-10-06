@@ -6,10 +6,11 @@ I’m a Soc Analyst with a passion for building, breaking and creating. Explore 
 	- Security+
 	- Network+
 	- CYSA+
-- BTL1
+- Blue Team Level 1
 - AWS CCP
-
+- Hack the Box Certified Defensive Security Analyst(CDSA)
 ## Skills
+- SIEM/Threat Hunting and Detection
 - Computer Networking
 - Malware Analysis
 - Python
