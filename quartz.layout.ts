@@ -8,8 +8,8 @@ export const sharedPageComponents: SharedLayout = {
   afterBody: [],
   footer: Component.Footer({
     links: {
-      GitHub: "https://github.com/RepTambe/Digital-Garden",
-      "Discord Community": "https://discord.gg/cRFFHYye7t",
+      GitHub: "https://github.com/RepTambe",
+      LinkedIn: "https://www.linkedin.com/in/augustine-tambe/",
     },
   }),
 }
@@ -35,7 +35,7 @@ export const defaultContentPageLayout: PageLayout = {
           grow: true,
         },
         { Component: Component.Darkmode() },
- //       { Component: Component.ReaderMode() },
+        { Component: Component.ReaderMode() },
       ],
     }),
     Component.Explorer(),

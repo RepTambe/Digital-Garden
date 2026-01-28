@@ -6,9 +6,7 @@ This runbook documents the steps to install HELK (Hunting ELK) on the Ubuntu VM.
 
 ## Prerequisites
 
-- Ubuntu 20.04 / 22.04 LTS VM  
-- Static IP (ex: `10.2.0.10`)  
-- 4 vCPU / 8–16 GB RAM / 100GB+ disk  
+- Ubuntu Server 22.04 LTS VM  
 - Internet access for package & Docker pulls  
 
 ---
@@ -25,16 +23,10 @@ sudo apt install -y git curl wget apt-transport-https ca-certificates gnupg lsb-
 
 ## 2. Install Docker & Docker Compose 
 ```
-# Install Docker
-curl -fsSL https://get.docker.com -o get-docker.sh
-sudo sh get-docker.sh
-
-# Add your user to Docker group (optional)
-sudo usermod -aG docker $USER
-
-# Install Docker Compose (plugin)
-sudo apt install -y docker-compose-plugin
-```
+sudo apt update
+sudo apt install -y docker.io docker-compose-plugin
+sudo usermod -aG docker "$USER"
+fleee```
 ## 3. Clone HELK Repository 
  ```
 git clone https://github.com/Cyb3rWard0g/HELK.git

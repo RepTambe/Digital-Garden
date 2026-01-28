@@ -1,4 +1,4 @@
-# HELK Infrastructure
+# ELK Infrastructure
 
 ## Lab Platform
 - **Hypervisor:** Proxmox VE (OptiPlex 3080 SFF )
@@ -9,12 +9,12 @@
 
 ## VM Layout
 
-| Host            | OS / Role                | vCPU | RAM   | Disk  | Network       |
-| --------------- | ------------------------ | ---- | ----- | ----- | ------------- |
-| HELK            | Ubuntu 20.04/22.04 LTS   | 4    | 8–16G | 100G+ | VLAN 20 (lab) |
-| Windows DC      | Windows Server 2019/2022 | 2    | 4–8G  | 40G   | VLAN 20       |
-| Windows Client  | Windows 10/11 Enterprise | 2    | 4G    | 40G   | VLAN 20       |
-| (Optional Kali) | Kali Linux (emulation)   | 2    | 2–4G  | 40G   | VLAN 20       |
+| Host            | OS / Role                | vCPU | RAM  | Disk | Network       |
+| --------------- | ------------------------ | ---- | ---- | ---- | ------------- |
+| ELK             | Ubuntu 20.04/22.04 LTS   | 4    | 8G   | 200G | VLAN 20 (lab) |
+| Windows DC      | Windows Server 2019/2022 | 2    | 4–8G | 40G  | VLAN 20       |
+| Windows Client  | Windows 10/11 Enterprise | 2    | 4G   | 40G  | VLAN 20       |
+| (Optional Kali) | Kali Linux (emulation)   | 2    | 2–4G | 40G  | VLAN 20       |
 
 > Adjust specs depending on your host hardware.
 

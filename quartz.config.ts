@@ -1,6 +1,5 @@
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
-import { sharedPageComponents, defaultContentPageLayout, defaultListPageLayout } from "./quartz.layout"
 
 /**
  * Quartz 4 Configuration
@@ -9,7 +8,7 @@ import { sharedPageComponents, defaultContentPageLayout, defaultListPageLayout }
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "🪴 My World",
+    pageTitle: "Augustine's Notes",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
@@ -21,38 +20,38 @@ const config: QuartzConfig = {
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
-  fontOrigin: "googleFonts",
-  cdnCaching: false,
-  typography: {
-    header: "Orbitron",
-    body: "Orbitron",
-    code: "IBM Plex Mono",
-  },
-  colors: {
-    lightMode: {
-      light: "#F2F2F2", // Background
-      lightgray: "#bcc0cc", // Code background, borders
-      gray: "#8c8fa1", // Unread nodes, subtitles
-      darkgray: "#45485f", // Body text
-      dark: "#4c4f69", // Code text
-      secondary: "#325738", // Links, titles, current node
-      tertiary: "#0E8390", // Visited nodes, accents
-      highlight: "rgba(143, 159, 169, 0.15)", // Highlight background
-      textHighlight: "#fff23688", // Highlighted text
+      fontOrigin: "googleFonts",
+      cdnCaching: true,
+      typography: {
+        header: "Schibsted Grotesk",
+        body: "Source Sans Pro",
+        code: "IBM Plex Mono",
+      },
+      colors: {
+        lightMode: {
+          light: "#faf8f8",
+          lightgray: "#e5e5e5",
+          gray: "#b8b8b8",
+          darkgray: "#4e4e4e",
+          dark: "#2b2b2b",
+          secondary: "#284b63",
+          tertiary: "#84a59d",
+          highlight: "rgba(143, 159, 169, 0.15)",
+          textHighlight: "#fff23688",
+        },
+        darkMode: {
+          light: "#161618",
+          lightgray: "#393639",
+          gray: "#646464",
+          darkgray: "#d4d4d4",
+          dark: "#ebebec",
+          secondary: "#7b97aa",
+          tertiary: "#84a59d",
+          highlight: "rgba(143, 159, 169, 0.15)",
+          textHighlight: "#b3aa0288",
+        },
+      },
     },
-    darkMode: {
-      light: "#131829", // Background
-      lightgray: "#70778F", // Code background, borders
-      gray: "#686D82", // Unread nodes, subtitles
-      darkgray: "#cdd6f4", // Body text
-      dark: "#D2DAF5", // Code text
-      secondary: "#a6e3a1", // Links, titles, current node
-      tertiary: "#89dceb", // Visited nodes, accents
-      highlight: "rgba(143, 159, 169, 0.15)", // Highlight background
-      textHighlight: "#b3aa0288", // Highlighted text
-    },
-  },
-},
   },
   plugins: {
     transformers: [

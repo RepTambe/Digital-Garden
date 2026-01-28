@@ -1,28 +1,16 @@
 ---
-title: My World
-tags:
-  - whoami
-  - resume
+title: Welcome
 ---
-<img src="assets/images/makashima-reading.jpg" alt="Makashima" style="float: right; margin: 10px; width: 300px;">
-   Welcome to My Digital Garden 🌱
 
-thanks for stopping by
+# Augustine's Digital Garden
 
-I'm [[Whoami|$Augment]] This is my personal knowledge base, where I share my thoughts, notes, and ideas.
+Hey, I'm Augustine. This is my personal knowledge base where I document what I'm learning and building.
 
-## Explore My Notes
-- [[Current Resume]]
-- [[Career]]
-- [[0 - Projects|Projects]]
-- [[0 - Books|Books]]
-- [[Learning Resources]]
-- [[Whoami|whoami]]
+You'll find notes on security engineering, homelab projects, technical concepts, and books I'm reading. Think of this as my second brain — a work in progress that grows over time.
 
+## Explore
 
-## About Me
-Feel free to explore and connect 
-
-LinkedIn: **https://www.linkedin.com/in/augustine-tambe/**
-
-
+- [[0 - Projects|Projects]] — Labs, tools, and hands-on work
+- [[Career]] — Professional notes and reflections
+- [[0 - Books|Reading]] — Books and learning resources
+- [[Whoami|About]] — More about me
