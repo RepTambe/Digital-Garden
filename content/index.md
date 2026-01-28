@@ -2,6 +2,8 @@
 title: Welcome
 ---
 
+![[netero.png|400]]
+
 # Augustine's Digital Garden
 
 Hey, I'm Augustine. This is my personal knowledge base where I document what I'm learning and building.
