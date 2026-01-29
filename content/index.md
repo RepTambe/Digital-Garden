@@ -14,5 +14,5 @@ You'll find notes on security engineering, homelab projects, technical concepts,
 
 - [[0 - Projects|Projects]] — Labs, tools, and hands-on work
 - [[Career]] — Professional notes and reflections
-- [[0 - Books|Reading]] — Books and learning resources
+- [[Books|Reading]] — Books and learning resources
 - [[Whoami|About]] — More about me
