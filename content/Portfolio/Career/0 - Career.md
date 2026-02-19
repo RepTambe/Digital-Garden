@@ -21,4 +21,4 @@ I’m a Soc Analyst with a passion for building, breaking and creating. Explore 
 
 ## [[0 - Projects|Projects]]
 - [[0 - HomeLab|Homelab]]
-- [[0 - Overview|HELK]]
+- [[1 - Detection Engineering/0 - Overview|Detection Engineering]]

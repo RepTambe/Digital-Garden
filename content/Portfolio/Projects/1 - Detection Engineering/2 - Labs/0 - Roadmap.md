@@ -43,7 +43,6 @@ This lab will serve as my personal detection engineering portfolio.
 
 ---
 
-## Links
-- [[Custom-KQL]]
-- [[Sigma-Rules]]
-- [[Playbooks]]
+## Related
+- [[1 - Lab Progress|Lab Progress]]
+- [[2 - Detecting Mimikatz|Detecting Mimikatz]]

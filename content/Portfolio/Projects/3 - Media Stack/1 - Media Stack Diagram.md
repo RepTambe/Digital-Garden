@@ -1,4 +1,4 @@
-Tags: [[0 - HomeLab]] [[4 - Media Stack/0 - Overview|Media Stack]]
+Tags: [[0 - HomeLab]] [[3 - Media Stack/0 - Overview|Media Stack]]
 
 # Media Stack Architecture Diagram
 
