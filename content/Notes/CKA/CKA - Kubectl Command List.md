@@ -25,6 +25,8 @@
 - `k logs -f <pod> -n <ns>`
 - `k exec -it <pod> -n <ns> -- sh`
 - `k delete pod <pod> -n <ns> $now`
+- `kubectl get pods --show-labels`
+- `kubectl get pods -l <key>=<value>`
 
 ## Create Resources Imperatively
 - `k create deployment <name> --image=<image>`
@@ -74,6 +76,7 @@
 
 ## Services and Networking
 - `k get svc -A`
+- `k get svc <svc> -o yaml`
 - `k describe svc <svc> -n <ns>`
 - `k get endpoints -n <ns>`
 - `k run tmp --rm -it --image=busybox:1.35 -- sh`
