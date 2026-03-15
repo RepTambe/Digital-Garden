@@ -4,6 +4,12 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This article reviews the differences between Helm 2 and Helm 3, focusing on architectural changes and new features in Helm 3.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Customizing chart parameters|Next: Customizing chart parameters]]
+
+
 ## Key Notes
 - Helm has evolved significantly over the years. Understanding the differences between Helm 2 and Helm 3 is essential for anyone working with Kubernetes charts and infrastructure. In this guide, we review Helm’s evolution, detail the architectural changes between Helm 2 and Helm 3, and explain an important new feature introduced in Helm 3.
 - A Brief History of Helm

@@ -4,6 +4,13 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This guide explains how to install and set up Kustomize for customizing Kubernetes resource configurations.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Image Transformers|Previous: Image Transformers]]
+- [[kustomization|Next: kustomization]]
+
+
 ## Key Notes
 - Installation Steps
 - The Kustomize team provides a convenient installation script that automatically detects your operating system and installs the appropriate version. To download and run this script, execute the following command in your terminal:

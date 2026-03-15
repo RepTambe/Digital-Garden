@@ -4,6 +4,14 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This article explores the Vertical Pod Autoscaler in Kubernetes, detailing its automated resource management and comparison with manual scaling methods.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Application Lifecycle Management Section Introduction|Section Overview]]
+- [[2025 Updates Introduction to Autoscaling|Previous: 2025 Updates Introduction to Autoscaling]]
+- [[Application Lifecycle Management Section Introduction|Next: Application Lifecycle Management Section Introduction]]
+
+
 ## Key Notes
 - In this lesson, we explore the workings of the Vertical Pod Autoscaler (VPA) in Kubernetes and how it automatically manages resource allocation. We begin by reviewing manual vertical scaling and then compare it with the VPA’s automated approach.
 - Manual Vertical Scaling

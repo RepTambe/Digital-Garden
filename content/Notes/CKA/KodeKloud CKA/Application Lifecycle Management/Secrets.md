@@ -4,6 +4,14 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This article explains how to securely manage sensitive data in Kubernetes using Secrets while avoiding common security pitfalls.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Application Lifecycle Management Section Introduction|Section Overview]]
+- [[Rolling Updates and Rollbacks|Previous: Rolling Updates and Rollbacks]]
+- [[Solution Commands and Arguments Optional|Next: Solution Commands and Arguments Optional]]
+
+
 ## Key Notes
 - Welcome to this comprehensive guide on managing Secrets in Kubernetes. In this article, we explain how to securely handle sensitive data (such as passwords and keys) in your Kubernetes deployments while avoiding common pitfalls like hardcoding credentials in your application.
 - Problem with Hardcoding Sensitive Data

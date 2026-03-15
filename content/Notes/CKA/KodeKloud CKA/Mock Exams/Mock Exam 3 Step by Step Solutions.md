@@ -4,6 +4,13 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This lesson provides detailed solutions for each question in Mock Exam Three, focusing on specific Kubernetes tasks with clear instructions and code examples.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Mock Exam 2 Step by Step Solutions|Previous: Mock Exam 2 Step by Step Solutions]]
+- [[Solution CKA Mock Exam 3 Optional|Next: Solution CKA Mock Exam 3 Optional]]
+
+
 ## Key Notes
 - This lesson presents detailed solutions for each question in Mock Exam Three. Each solution focuses on a specific Kubernetes task and provides clear instructions, configuration code blocks, and diagram references. All image links and descriptions remain exactly as provided.
 - Question 1 – Adjusting Network Parameters for Kubernetes

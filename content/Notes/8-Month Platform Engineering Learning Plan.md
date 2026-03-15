@@ -57,7 +57,7 @@ Month 8  ██████████  Advanced topics + Capstone
 - [ ] **File system** — FHS layout (`/etc`, `/var`, `/usr`, `/tmp`), `df`, `du`, `mount`
 - [ ] **Permissions** — `chmod`, `chown`, `umask`, SUID/SGID, sticky bit (CKA + RHCSA)
 - [ ] **Process management** — `ps aux`, `top`/`htop`, `kill`, signals, `systemctl` (RHCSA heavy)
-- [ ] **Networking** — TCP/IP model, DNS resolution (`dig`, `nslookup`), `curl`, `netstat`/`ss`, ports, firewalls (`iptables` basics)
+- [x] **Networking** — TCP/IP model, DNS resolution (`dig`, `nslookup`), `curl`, `netstat`/`ss`, ports, firewalls (`iptables` basics)
 - [ ] **SSH** — Key-based auth, `~/.ssh/config`, tunneling, agent forwarding
 - [ ] **Shell scripting** — Variables, loops, conditionals, functions, `set -euo pipefail`
 
@@ -74,7 +74,7 @@ Month 8  ██████████  Advanced topics + Capstone
   - **Storage** — Blob storage, Storage Accounts (your Terraform state lives here)
   - **Identity** — Azure AD (Entra ID), Service Principals, Managed Identities, Workload Identity
   - **Security** — Key Vault, Defender, RBAC (Subscription → Resource Group → Resource level)
-- [ ] **Azure Government** — How it differs from public Azure (sovereign cloud regions)
+- [x] **Azure Government** — How it differs from public Azure (sovereign cloud regions)
 - [ ] **Azure CLI** — `az login`, `az aks get-credentials`, `az keyvault secret list`
   - Practice: `az login` then explore resources with `az resource list`
 
@@ -362,6 +362,105 @@ Azure Key Vault → ClusterSecretStore → ExternalSecret → K8s Secret → Pod
   - Pod can't pull image from ACR
   - Ingress not routing traffic (Istio VirtualService misconfigured)
   - Terraform state drift
+
+---
+
+## Post-Plan — Transition into MLOps
+
+> After Month 8, the goal is to stop being "platform-only" and become the engineer who can support model delivery, ML infrastructure, and production AI workloads end to end.
+
+### Why MLOps Fits Next
+
+- You will already have the right base: Kubernetes, Terraform, GitOps, observability, secrets management, CI/CD, and cloud infrastructure
+- MLOps builds on platform engineering, but shifts the application layer toward data pipelines, model training, model serving, and experiment lifecycle management
+- This move makes you more valuable because very few engineers can bridge platform reliability and ML delivery well
+
+### Phase 1: MLOps Foundations
+
+- [ ] **Learn the ML lifecycle** — data prep, training, evaluation, packaging, deployment, monitoring, retraining
+- [ ] **Python for ML workflows** — virtual environments, packaging, `pandas`, notebooks, APIs, CLI tooling
+- [ ] **Model artifact flow** — datasets, feature sets, trained model binaries, registries, reproducibility
+- [ ] **Containers for ML** — packaging inference apps, GPU vs CPU considerations, image size, startup time
+- [ ] **Serving basics** — REST inference APIs, batch jobs, async workers
+
+**Target outcome**: Be able to explain the difference between deploying an app and deploying a model-backed service.
+
+### Phase 2: Core MLOps Tooling
+
+- [ ] **MLflow** — experiment tracking, model registry, runs, artifacts
+- [ ] **Kubeflow** or **KServe** — understand the Kubernetes-native ML stack
+- [ ] **Model serving patterns** — single-model, multi-model, canary rollouts, shadow deployments
+- [ ] **Data and workflow orchestration** — start with simple scheduled pipelines, then explore Airflow or Prefect
+- [ ] **Storage for ML workloads** — object storage, artifact versioning, dataset handling
+- [ ] **GPU scheduling basics** — node pools, requests/limits, taints, tolerations, device plugins
+
+**Target outcome**: Stand up a minimal model training-to-serving workflow on Kubernetes.
+
+### Phase 3: Production ML Operations
+
+- [ ] **Model observability** — latency, throughput, error rate, saturation, model-specific metrics
+- [ ] **Data drift / concept drift** — understand what changes in data or model behavior should trigger review
+- [ ] **Secure ML platforms** — secret handling, registry access, supply chain concerns, RBAC for ML teams
+- [ ] **CI/CD for ML** — separate code deploys from model promotion workflows
+- [ ] **Feature and model promotion** — dev → staging → prod validation gates
+- [ ] **Cost awareness** — GPU cost, idle training jobs, right-sizing inference workloads
+
+**Target outcome**: Operate ML systems with the same discipline as platform systems.
+
+### Suggested 3-Month MLOps Ramp
+
+#### Month 9: ML + Python + Model Serving Basics
+
+- [ ] Learn Python well enough to build and package a small inference API
+- [ ] Train or download a small model and serve it with FastAPI
+- [ ] Containerize it and deploy it to Kubernetes
+- [ ] Add logging, metrics, health probes, and autoscaling
+
+#### Month 10: Experiment Tracking + Pipelines
+
+- [ ] Stand up MLflow and log experiments, metrics, and model artifacts
+- [ ] Build a simple training pipeline that outputs a versioned model
+- [ ] Store artifacts in object storage
+- [ ] Add a promotion step from "best run" to "deployable model"
+
+#### Month 11: Kubernetes-Native MLOps
+
+- [ ] Explore KServe or Kubeflow serving patterns
+- [ ] Deploy a model with canary or shadow rollout strategy
+- [ ] Add dashboards and alerts for inference latency and failure rate
+- [ ] Document an end-to-end operating model for ML workloads on your platform
+
+### MLOps Capstone Idea
+
+- [ ] Build a small internal ML platform demo:
+  1. Training pipeline produces a model artifact
+  2. MLflow tracks runs and stores the promoted model
+  3. A CI/CD or GitOps flow deploys the model service to Kubernetes
+  4. KServe or a custom FastAPI service exposes inference
+  5. Datadog or Prometheus tracks API and model health
+  6. A rollback path exists for bad model versions
+
+### Recommended Learning Stack
+
+| Area | Starting Point |
+|------|----------------|
+| **Python** | FastAPI, `pandas`, packaging basics |
+| **Experiment Tracking** | MLflow |
+| **Serving** | FastAPI first, then KServe |
+| **Pipelines** | Simple Python jobs → Airflow/Prefect later |
+| **Model Hosting** | Kubernetes + Helm + ArgoCD |
+| **Observability** | Datadog / Prometheus + model-specific metrics |
+| **Cloud Direction** | Azure ML later if your job starts leaning heavily into managed ML services |
+
+### Long-Term Outcome
+
+- You become a **Platform Engineer with MLOps depth**, not just someone who can deploy clusters
+- You can support both application platforms and ML delivery platforms
+- You position yourself for roles like:
+  - **Senior Platform Engineer**
+  - **Cloud Platform Engineer**
+  - **MLOps Engineer**
+  - **AI Platform Engineer**
 
 ---
 

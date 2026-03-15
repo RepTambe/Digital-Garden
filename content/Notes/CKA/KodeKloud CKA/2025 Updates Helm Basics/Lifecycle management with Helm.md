@@ -4,6 +4,13 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This article explores how Helm simplifies lifecycle management in Kubernetes by packaging objects into releases for easy installation, upgrades, and rollbacks.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Installation and configuration|Previous: Installation and configuration]]
+- [[What is Helm|Next: What is Helm]]
+
+
 ## Key Notes
 - In this article, we explore how Helm simplifies lifecycle management in Kubernetes. Helm packages Kubernetes objects into releases, allowing you to install, upgrade, and roll back configurations with ease. Every time you install a chart, Helm creates a release that tracks all associated Kubernetes objects. This tracking enables seamless upgrades, downgrades, or uninstallations without interfering with other releases—all even if multiple releases are based on the same chart.
 - For instance, you can deploy two independent releases from the same WordPress chart:

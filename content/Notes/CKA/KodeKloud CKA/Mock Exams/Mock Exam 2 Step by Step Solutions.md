@@ -4,6 +4,13 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This article provides step-by-step solutions for Kubernetes cluster configuration and troubleshooting across various scenarios.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Mock Exam 1 Step by Step Solutions|Previous: Mock Exam 1 Step by Step Solutions]]
+- [[Mock Exam 3 Step by Step Solutions|Next: Mock Exam 3 Step by Step Solutions]]
+
+
 ## Key Notes
 - This article provides detailed step-by-step solutions for Mock Exam Two. Each question covers a key aspect of Kubernetes cluster configuration—from creating storage classes and deployments to configuring ingress, RBAC, network policies, HPA setups, and troubleshooting common issues. Follow the solutions below to configure your clusters and gain hands-on experience with Kubernetes.
 - Question 1 – Creating a Default Local StorageClass

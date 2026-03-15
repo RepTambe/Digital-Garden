@@ -4,6 +4,13 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This lesson explains the steps required to install Helm, a package manager for Kubernetes, on Linux systems.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Helm Components|Previous: Helm Components]]
+- [[Lifecycle management with Helm|Next: Lifecycle management with Helm]]
+
+
 ## Key Notes
 - This lesson explains the steps required to install Helm, a package manager for Kubernetes. Before starting, ensure you have a functioning Kubernetes cluster and that kubectl is properly configured. Verify that your kubeconfig file contains the correct credentials to access your Kubernetes cluster.
 - Helm is compatible with Linux, Windows, and macOS. This guide focuses on installing Helm on Linux systems.

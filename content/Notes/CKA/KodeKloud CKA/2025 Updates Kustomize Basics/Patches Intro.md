@@ -4,6 +4,13 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This article explores using patches with Kustomize to modify Kubernetes configurations for targeted updates to specific resource sections.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Patches Dictionary|Previous: Patches Dictionary]]
+- [[Patches list|Next: Patches list]]
+
+
 ## Key Notes
 - In this lesson, we explore how to use patches with Kustomize to modify Kubernetes configurations. Patches offer a granular approach to updating specific sections of a Kubernetes resource, which is especially useful when you want to target one or a few objects rather than applying a broad change. For instance, if you need to update the replica count in a Deployment, a tailored patch that specifically addresses that object is ideal.
 - Patch Parameters

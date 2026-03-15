@@ -4,6 +4,13 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This guide explores monitoring Kubernetes cluster components using the Metrics Server, including inspecting pods, deploying the server, and analyzing resource consumption.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Logging and Monitoring Section Introduction|Section Overview]]
+- [[Solution Logging Optional|Previous: Solution Logging Optional]]
+
+
 ## Key Notes
 - In this guide, we will explore how to monitor Kubernetes cluster components using the Metrics Server. We’ll walk through inspecting running pods, deploying the Metrics Server, and examining resource consumption on both nodes and pods.
 - Inspecting Running Pods

@@ -4,6 +4,14 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This article explores Kubernetes releases, versioning schemes, and software release management to help understand version nuances and upgrade processes.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Cluster Maintenance Section Introduction|Section Overview]]
+- [[Demo Cluster upgrade|Previous: Demo Cluster upgrade]]
+- [[OS Upgrades|Next: OS Upgrades]]
+
+
 ## Key Notes
 - Welcome to this lesson on Kubernetes Software Versions. In this article, we’ll explore the various Kubernetes releases, explain their versioning scheme, and detail how the Kubernetes project manages its software releases. This content is designed to help you understand the nuances of different versions and upgrade processes.
 - Viewing Your Cluster Version

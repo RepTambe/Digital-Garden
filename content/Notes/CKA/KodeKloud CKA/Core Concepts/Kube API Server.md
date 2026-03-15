@@ -4,6 +4,14 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This article provides a comprehensive guide on the Kube API Servers role in managing requests and coordinating components in a Kubernetes cluster.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Core Concepts Section Introduction|Section Overview]]
+- [[ETCD in Kubernetes|Previous: ETCD in Kubernetes]]
+- [[Kube Controller Manager|Next: Kube Controller Manager]]
+
+
 ## Key Notes
 - Welcome to this comprehensive guide on the Kube API Server in Kubernetes. In this article, we explore how the Kube API Server acts as the central management component in a Kubernetes cluster by handling requests from kubectl, validating and authenticating them, interfacing with the etcd datastore, and coordinating with other system components.
 - When you execute a command like:

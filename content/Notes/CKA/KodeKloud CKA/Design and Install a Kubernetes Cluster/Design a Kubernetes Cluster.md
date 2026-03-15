@@ -4,6 +4,13 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This lesson explores key considerations and best practices for designing a Kubernetes cluster tailored to specific needs.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Configure High Availability|Previous: Configure High Availability]]
+- [[ETCD in HA|Next: ETCD in HA]]
+
+
 ## Key Notes
 - Hello and welcome to this lesson on designing a Kubernetes cluster. In this guide, we will explore the key considerations and best practices for setting up a Kubernetes environment tailored to your specific needs. Before diving in, ask yourself several important questions to determine the requirements and scope of your cluster:
 - Your answers will directly influence the design of your Kubernetes cluster.

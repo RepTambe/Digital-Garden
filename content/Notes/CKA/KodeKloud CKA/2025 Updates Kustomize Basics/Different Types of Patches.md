@@ -4,6 +4,13 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This guide explores methods to define patches in kustomization configurations using JSON 6902 or strategic merge patches.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Components|Previous: Components]]
+- [[Image Transformers|Next: Image Transformers]]
+
+
 ## Key Notes
 - In this guide, we explore two methods to define patches within your kustomization configuration. By using either JSON 6902 patches or strategic merge patches, you can choose to embed your patches inline in your kustomization.yaml file or reference an external file that contains the patch definitions.
 - Inline Patching

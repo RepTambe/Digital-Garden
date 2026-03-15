@@ -4,6 +4,12 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This guide demonstrates using transformation techniques with Kustomize, including managing Kubernetes configurations and applying common labels, namespaces, and image transformations.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Patches list|Previous: Patches list]]
+
+
 ## Key Notes
 - In this guide, we demonstrate how to use common transformation techniques with Kustomize, including the image transformer. We also review the directory structure used in this demonstration to help you manage and organize Kubernetes configurations efficiently.
 - Directory Structure Overview

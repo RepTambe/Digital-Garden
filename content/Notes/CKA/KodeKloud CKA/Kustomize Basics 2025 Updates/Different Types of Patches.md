@@ -4,6 +4,13 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This guide explains how to define patches using JSON 6902 and strategic merge patch methods with inline and separate file approaches.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Components|Previous: Components]]
+- [[Image Transformers|Next: Image Transformers]]
+
+
 ## Key Notes
 - In this guide, we explain how to define patches using both JSON 6902 and strategic merge patch methods. There are two primary approaches to defining a patch:
 - Inline—where the patch is embedded directly within the kustomization.yaml file.

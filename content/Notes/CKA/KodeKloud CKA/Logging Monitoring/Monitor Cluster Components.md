@@ -4,6 +4,14 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This guide explains how to monitor resource consumption in a Kubernetes cluster for optimal performance across nodes and pods.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Logging and Monitoring Section Introduction|Section Overview]]
+- [[Managing Application Logs|Previous: Managing Application Logs]]
+- [[Solution Logging Optional|Next: Solution Logging Optional]]
+
+
 ## Key Notes
 - Welcome to this guide on monitoring a Kubernetes cluster. In this article, we explain how to track resource consumption within your Kubernetes environment and ensure optimal performance across your nodes and pods.
 - What to Monitor

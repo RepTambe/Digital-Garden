@@ -4,6 +4,14 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This article emphasizes the importance of following labs and video lectures for effective learning in the course.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Core Concepts Section Introduction|Section Overview]]
+- [[A note on Docker Deprecation|Previous: A note on Docker Deprecation]]
+- [[Cluster Architecture|Next: Cluster Architecture]]
+
+
 ## Key Notes
 - In this article, we emphasize the importance of following the provided labs and video lectures in this course. While it might be tempting to set up your own local environment right away, our structured approach is designed to guide you step-by-step through the core concepts without distractions.
 - Focus on the course content as provided to maximize your learning efficiency and avoid unnecessary detours.

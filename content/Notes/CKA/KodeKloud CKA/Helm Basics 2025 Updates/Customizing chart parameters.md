@@ -4,6 +4,13 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: Learn to customize chart parameters during a Helm chart installation, including overriding default values for WordPress using command-line options or custom values files.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[A quick note about Helm2 vs Helm3|Previous: A quick note about Helm2 vs Helm3]]
+- [[Helm charts|Next: Helm charts]]
+
+
 ## Key Notes
 - In this guide, you’ll learn how to customize chart parameters during a Helm chart installation. When you deploy WordPress using the Bitnami chart, it uses the default values defined in the chart’s values.yaml file. For example, the default blog name is set as “User’s Blog!” in the values file. This article explains how this value is configured and outlines the various methods available for overriding it.
 - Understanding the Default Configuration

@@ -4,6 +4,13 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This guide covers managing Kubernetes configuration directories and using Kustomize for efficient deployments.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Managing Directories|Previous: Managing Directories]]
+- [[Overlays|Next: Overlays]]
+
+
 ## Key Notes
 - In this demo, we review how to efficiently manage your Kubernetes configuration directories. The example uses a structured “k8s” directory containing three subdirectories, each dedicated to a distinct application component:
 - api/

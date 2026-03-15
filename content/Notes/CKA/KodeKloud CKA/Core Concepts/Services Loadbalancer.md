@@ -4,6 +4,14 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This article explores the LoadBalancer service type in Kubernetes, focusing on simplifying access to front-end applications through cloud-native load balancing.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Core Concepts Section Introduction|Section Overview]]
+- [[Services Cluster IP|Previous: Services Cluster IP]]
+- [[Solution Deploymentoptional|Next: Solution Deploymentoptional]]
+
+
 ## Key Notes
 - In this article, we explore another service type: the LoadBalancer. Previously, we examined the NodePort service that exposes an application on a specific port of the worker nodes. Here, we focus on front-end applications such as the voting app and the result app.
 - Imagine that these pods are distributed across a cluster—say, a four-node cluster. To allow external users to access these applications, services of type NodePort were created. The NodePort service routes incoming traffic from designated ports on the worker nodes to the corresponding pods. With NodePort, you can reach the applications using any node’s IP address along with its high port number. For example, if the voting app and the result app are bound to different IP-port combinations, users could access the application using any node’s IP address and its specified port, even if the pods are running on only two of the nodes.

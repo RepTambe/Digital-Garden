@@ -4,6 +4,14 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This lab explores ReplicaSets in Kubernetes, covering verification, troubleshooting, scaling, and modifying ReplicaSets through practical commands and configurations.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Core Concepts Section Introduction|Section Overview]]
+- [[Solution Pods optional|Previous: Solution Pods optional]]
+- [[Solution Services optional|Next: Solution Services optional]]
+
+
 ## Key Notes
 - In this lab, we explore ReplicaSets in Kubernetes. Follow along as we review lab steps, execute commands, and troubleshoot issues. This guide covers checking current resources, examining ReplicaSet configurations, troubleshooting image pull errors, scaling, and modifying ReplicaSets using definition files.
 - 1. Verify Existing Pods

@@ -4,6 +4,14 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This guide explores Kubernetes services, focusing on enabling communication between application components and detailing the creation and use of NodePort services.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Core Concepts Section Introduction|Section Overview]]
+- [[ReplicaSets|Previous: ReplicaSets]]
+- [[Services Cluster IP|Next: Services Cluster IP]]
+
+
 ## Key Notes
 - Hello, and welcome to this in-depth guide on Kubernetes Services for Beginners. My name is Mumshad Mannambeth, and in this article, we’ll explore how Kubernetes services enable seamless communication between various application components—both within the cluster and from the outside world.
 - Kubernetes services allow different sets of Pods to interact with each other. Whether connecting the front end to back-end processes or integrating external data sources, services help to decouple microservices while maintaining reliable communication. For instance, you can expose your front-end to end users and enable back-end components to interact efficiently.

@@ -4,6 +4,13 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This article discusses Kustomize, a tool for managing Kubernetes configurations across multiple environments efficiently.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Kustomize Output|Previous: Kustomize Output]]
+- [[Kustomize vs Helm|Next: Kustomize vs Helm]]
+
+
 ## Key Notes
 - Before diving into what Kustomize is and how to use it, let’s review the problem it addresses and the motivation behind its creation.
 - The Challenge with Multiple Environments

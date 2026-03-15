@@ -4,6 +4,12 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This guide highlights key operations and commands available with Helm for managing deployments on Kubernetes efficiently.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[What is Helm|Previous: What is Helm]]
+
+
 ## Key Notes
 - With Helm installed, you can easily manage deployments on Kubernetes using the Helm command-line interface (CLI). This guide highlights key operations and commands available with Helm, ensuring you get started quickly and efficiently.
 - When you run the Helm command without parameters, it displays a comprehensive help menu that provides a quick reference for common actions. For example:

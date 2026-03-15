@@ -1,3 +1,16 @@
+## Related Notes
+
+- [[Books]]
+- [[Past-Reads]]
+
+## Details
+
+- **Author**: Joseph Conrad
+- **Status**: Finished
+- **Rating**: Unrated
+
+## Thoughts
+
 What a read
 
 I initially read half the book. It was confusing ngl as this was my first literary and difficult read in a while.

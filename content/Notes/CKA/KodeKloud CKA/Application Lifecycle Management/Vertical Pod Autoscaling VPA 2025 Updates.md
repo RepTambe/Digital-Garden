@@ -4,6 +4,13 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This article explores optimizing Kubernetes workloads by using the Vertical Pod Autoscaler to automatically adjust resource allocations for applications.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Application Lifecycle Management Section Introduction|Section Overview]]
+- [[Solution Secrets Optional|Previous: Solution Secrets Optional]]
+
+
 ## Key Notes
 - In this article, we explore how to optimize Kubernetes workloads by scaling them vertically using the Vertical Pod Autoscaler (VPA). As a Kubernetes administrator, your goal is to ensure that applications always receive optimal resource allocations, such as CPU and memory. Let’s start by examining a typical deployment configuration for a pod that specifies a CPU request of 250 millicores and a limit of 500 millicores:
 - apps/v1

@@ -4,6 +4,14 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This article provides a hands-on lab for understanding Kubernetes pods, including creation, inspection, and configuration using YAML.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Core Concepts Section Introduction|Section Overview]]
+- [[Solution Imperative Commands optional|Previous: Solution Imperative Commands optional]]
+- [[Solution ReplicaSets optional|Next: Solution ReplicaSets optional]]
+
+
 ## Key Notes
 - In this lesson, you’ll explore a hands-on lab that deepens your understanding of Kubernetes pods. We’ll start by checking existing pods, create new ones with various images, inspect pod details, and adjust a pod configuration using YAML.
 - 1. Verify Existing Pods

@@ -4,6 +4,14 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This lesson covers creating a Kubernetes Pod using a YAML file, including structure, creation, and status verification.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Core Concepts Section Introduction|Section Overview]]
+- [[Pods|Previous: Pods]]
+- [[Practice Test Introduction|Next: Practice Test Introduction]]
+
+
 ## Key Notes
 - Welcome to this lesson on creating a Pod in Kubernetes using a YAML configuration file. In this guide, you’ll learn how to structure your YAML file, create the Pod with kubectl, and verify its status. Kubernetes leverages YAML files to define objects such as Pods, ReplicaSets, Deployments, and Services. These definitions adhere to a consistent structure, with four essential top-level properties: apiVersion, kind, metadata, and spec.
 - Top-Level Fields in a Kubernetes YAML File

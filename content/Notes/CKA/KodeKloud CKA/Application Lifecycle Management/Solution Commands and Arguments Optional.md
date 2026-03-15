@@ -4,6 +4,14 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This article reviews a lab exercise on Kubernetes container commands and arguments, including pod inspection, YAML modifications, and Dockerfile interactions.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Application Lifecycle Management Section Introduction|Section Overview]]
+- [[Secrets|Previous: Secrets]]
+- [[Solution Env Variables Optional|Next: Solution Env Variables Optional]]
+
+
 ## Key Notes
 - In this lesson, we review a lab exercise focused on Kubernetes container commands and arguments. We will examine existing pods, modify YAML configurations to change container commands and arguments, and explore how Dockerfiles and Kubernetes manifests interact to determine container startup behavior.
 - Reviewing an Existing Pod

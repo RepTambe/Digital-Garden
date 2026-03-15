@@ -4,6 +4,12 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This article explores efficient modifications of Kubernetes configurations using Kustomize&#x27;s built-in transformers for common configuration changes across multiple YAML files.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Components|Next: Components]]
+
+
 ## Key Notes
 - In this article, we explore how to efficiently modify your Kubernetes configurations using Kustomize’s built-in transformers. Kustomize allows you to apply common configuration changes across multiple YAML files—whether by adding labels, modifying resource names, setting namespaces, or applying annotations—without editing each file manually.
 - Below, we outline the challenges these transformers solve and provide detailed examples of several common transformations.

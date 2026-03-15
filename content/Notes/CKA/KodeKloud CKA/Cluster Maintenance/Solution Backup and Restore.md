@@ -4,6 +4,14 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: Learn to back up and restore an etcd cluster in Kubernetes, including verification, snapshot creation, and restoration procedures.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Cluster Maintenance Section Introduction|Section Overview]]
+- [[OS Upgrades|Previous: OS Upgrades]]
+- [[Solution Backup and Restore 2|Next: Solution Backup and Restore 2]]
+
+
 ## Key Notes
 - In this lesson, you will learn how to back up and restore an etcd cluster running on a Kubernetes control plane. We begin by verifying the existing deployments, inspecting the etcd container setup, and then proceed with the backup and restore procedures.
 - 1. Checking the Current Deployments

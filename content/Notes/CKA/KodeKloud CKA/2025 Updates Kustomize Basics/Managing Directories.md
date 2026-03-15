@@ -4,6 +4,13 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This article explores efficient management of Kubernetes manifests across multiple directories using Kustomize for better organization and deployment.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Kustomize vs Helm|Previous: Kustomize vs Helm]]
+- [[Managing Directories Demo|Next: Managing Directories Demo]]
+
+
 ## Key Notes
 - In this article, we explore how to efficiently manage Kubernetes manifests spread across multiple directories using Kustomize. Up to now, you have seen only a basic example with a simple kustomization.yaml file. However, even with limited knowledge, you can leverage powerful features in Kustomize to better organize your configurations.
 - Consider a scenario where you have a directory named “k8s” containing four YAML files:

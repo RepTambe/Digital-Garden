@@ -1,3 +1,9 @@
+## Related Notes
+
+- [[Books]]
+- [[Currently Reading|What I'm currently reading]]
+- [[Past-Reads]]
+
 Growing up I was an "addicted" reader. Between AAU basketball games, I'd sneak in a couple pages. My parents happily enabled my reading and would supply me with all types of books. We'd frequent Half-Price books with my siblings as we all took a big liking to reading.  I was big into Sci-FI, History, Sports, teen fiction, even romance. Whatever I could get my hands on, I engulfed. 
 
 I stopped reading around my junior year of highschool to "focus on books" and didn't really pick it back up until after my Freshman year of college. It was during COVID and I selling Vivint smart homes. I realized I wanted to level up my life so I devoured all the self-help  books around me. Rich dad poor dad, The secret, Can't Hurt Me(still my favorite audiobook of all time), and plenty of others. I enjoyed the content, though repetitive and dry. In all honesty, I felt this was the path to increasing my knowledge and "gaining an edge"

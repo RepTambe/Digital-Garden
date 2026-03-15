@@ -4,6 +4,13 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This lesson explores how Kubernetes uses the Container Network Interface to manage container networking and configure network plugins.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Cluster Networking|Previous: Cluster Networking]]
+- [[CNI weave|Next: CNI weave]]
+
+
 ## Key Notes
 - In this lesson, we explore how Kubernetes leverages the Container Network Interface (CNI) to manage container networking. You will gain an understanding of how network plugins are configured and used in a Kubernetes environment.
 - Earlier, we reviewed:

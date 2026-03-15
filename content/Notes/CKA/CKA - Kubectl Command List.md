@@ -1,5 +1,12 @@
 # CKA - Kubectl Command List
 
+## Related Notes
+- [[00 - Index|CKA Index]]
+- [[CKA - Application Lifecycle Management]]
+- [[CKA - Metrics Logging]]
+- [[CKA - Kubectl Exam 20 Commands]]
+- [[CKA - Personal Notes]]
+
 ## Fast Habits
 - `alias k=kubectl`
 - `export do="--dry-run=client -o yaml"`

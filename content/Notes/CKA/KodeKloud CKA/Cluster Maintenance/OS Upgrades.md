@@ -4,6 +4,14 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This lesson covers handling node upgrades in Kubernetes, focusing on draining, cordoning, and minimizing service interruptions during maintenance or upgrades.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Cluster Maintenance Section Introduction|Section Overview]]
+- [[Kubernetes Software Versions|Previous: Kubernetes Software Versions]]
+- [[Solution Backup and Restore|Next: Solution Backup and Restore]]
+
+
 ## Key Notes
 - Welcome to this lesson on handling node upgrades in a Kubernetes cluster. In this guide, we will explore various scenarios that require taking a node offline, such as routine maintenance, base software upgrades, or the application of security patches. We also review options to minimize service interruptions during these events.
 - Imagine a cluster with several nodes where each node runs pods serving your applications. What happens if a node goes down? The pods on that node become inaccessible, and depending on your deployment strategy, this could impact your users. For instance, if you have multiple replicas of a “blue” pod, your users will still be served by the remaining replicas. However, if a “green” pod is the only instance running, its unavailability results in downtime.

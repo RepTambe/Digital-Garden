@@ -4,6 +4,14 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: Learn to back up and restore etcd databases across multiple Kubernetes clusters using the kubectl client on the student node.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Cluster Maintenance Section Introduction|Section Overview]]
+- [[Solution Backup and Restore|Previous: Solution Backup and Restore]]
+- [[Solution Cluster Upgrade Process|Next: Solution Cluster Upgrade Process]]
+
+
 ## Key Notes
 - In this lesson, you will learn how to back up and restore etcd databases across multiple Kubernetes clusters. We will use the student node—which already has the kubectl client installed—to access and work with both clusters in our environment.
 - Verifying the Environment and Cluster Configuration

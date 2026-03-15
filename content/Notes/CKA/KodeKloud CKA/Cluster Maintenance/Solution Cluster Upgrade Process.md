@@ -4,6 +4,13 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This article demonstrates the process of upgrading a Kubernetes cluster while ensuring zero downtime for production applications.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Cluster Maintenance Section Introduction|Section Overview]]
+- [[Solution Backup and Restore 2|Previous: Solution Backup and Restore 2]]
+
+
 ## Key Notes
 - In this lesson, we will walk through a hands-on lab demonstrating the process of upgrading a Kubernetes cluster running production applications. This upgrade covers inspecting the current cluster state, draining nodes, upgrading control plane and worker node components, and validating the new version—all while ensuring zero downtime during the migration of workloads.
 - Inspecting the Current Cluster

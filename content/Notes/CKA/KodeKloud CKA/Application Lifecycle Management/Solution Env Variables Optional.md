@@ -4,6 +4,14 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: Learn to manage environment variables in Kubernetes pods and update them using direct modifications and ConfigMaps for dynamic configuration.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Application Lifecycle Management Section Introduction|Section Overview]]
+- [[Solution Commands and Arguments Optional|Previous: Solution Commands and Arguments Optional]]
+- [[Solution Init Containers Optional|Next: Solution Init Containers Optional]]
+
+
 ## Key Notes
 - In this lab, you’ll learn how to manage environment variables in a Kubernetes pod and update them using both direct modifications and ConfigMaps. Follow along to understand how to check running pods, update environment variables, and integrate ConfigMaps for dynamic configuration.
 - Checking the Running Pod

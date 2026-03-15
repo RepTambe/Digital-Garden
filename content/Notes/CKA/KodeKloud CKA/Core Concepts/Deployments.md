@@ -4,6 +4,14 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This guide explores Kubernetes deployments, simplifying application management with features like rolling updates, rollbacks, and high availability.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Core Concepts Section Introduction|Section Overview]]
+- [[Demo Pods with YAML|Previous: Demo Pods with YAML]]
+- [[Docker vs ContainerD|Next: Docker vs ContainerD]]
+
+
 ## Key Notes
 - Hello and welcome! My name is Mumshad Mannambeth. In this guide, we dive into Kubernetes deployments—an abstraction that simplifies managing your applications in a production environment. Rather than interacting directly with pods and ReplicaSets, deployments offer advanced features that enable you to:
 - Deploy multiple instances of your application (like a web server) to ensure high availability and load balancing.

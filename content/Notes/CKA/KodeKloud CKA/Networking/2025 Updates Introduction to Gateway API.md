@@ -4,6 +4,12 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This article introduces the Gateway API, a flexible approach to managing network routing in Kubernetes, addressing limitations of Ingress.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Cluster Networking|Next: Cluster Networking]]
+
+
 ## Key Notes
 - In this lesson, we introduce the Gateway API, a modern, more flexible approach to managing network routing in Kubernetes. In previous discussions on Ingress, we saw a scenario where two services shared the same Ingress resource:
 - Imagine a scenario where independent teams or even separate organizations manage different services. For example, one team could be responsible for the web service while another oversees the video service. In such multi-tenant environments, a single Ingress resource — which can be controlled by only one team at a time — may lead to coordination challenges and potential conflicts. In addition, Ingress has limited support for multi-tenancy and parameterized rules.

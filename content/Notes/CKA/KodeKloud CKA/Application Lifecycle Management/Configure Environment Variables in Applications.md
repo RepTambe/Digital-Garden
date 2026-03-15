@@ -4,6 +4,14 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This article explores configuring environment variables for applications in Kubernetes, including Docker examples and using ConfigMaps and Secrets for better management.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Application Lifecycle Management Section Introduction|Section Overview]]
+- [[Configure ConfigMaps in Applications|Previous: Configure ConfigMaps in Applications]]
+- [[Demo Encrypting Secret Data at Rest|Next: Demo Encrypting Secret Data at Rest]]
+
+
 ## Key Notes
 - In this article, we’ll explore how to configure environment variables for applications deployed with Kubernetes. First, we review a basic Docker example that establishes an environment variable, then we demonstrate how to specify environment variables directly within a Kubernetes pod manifest. This guide is essential for developers looking to streamline container configuration and deployment.
 - Setting Environment Variables Using Docker

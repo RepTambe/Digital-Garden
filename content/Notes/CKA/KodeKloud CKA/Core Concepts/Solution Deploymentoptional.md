@@ -4,6 +4,14 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This guide introduces Kubernetes deployments and explains how to verify the environment and troubleshoot deployment issues.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Core Concepts Section Introduction|Section Overview]]
+- [[Services Loadbalancer|Previous: Services Loadbalancer]]
+- [[Solution Imperative Commands optional|Next: Solution Imperative Commands optional]]
+
+
 ## Key Notes
 - In this guide, we introduce Kubernetes deployments by first examining the current environment state before any deployment is created.
 - Environment Verification

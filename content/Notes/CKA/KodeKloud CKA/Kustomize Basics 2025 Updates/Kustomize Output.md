@@ -4,6 +4,13 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This article explains how to deploy and delete Kubernetes resources using Kustomize in conjunction with the kubectl command.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Kustomize ApiVersion Kind|Previous: Kustomize ApiVersion Kind]]
+- [[Kustomize Problem Statement idealogy|Next: Kustomize Problem Statement idealogy]]
+
+
 ## Key Notes
 - kubectl get pods
 - kubectl get deployments

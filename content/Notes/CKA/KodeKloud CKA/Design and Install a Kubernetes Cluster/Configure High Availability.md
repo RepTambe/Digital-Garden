@@ -4,6 +4,13 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This guide explains configuring high availability in Kubernetes to ensure continuous operation during master node failures.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Choosing Kubernetes Infrastructure|Previous: Choosing Kubernetes Infrastructure]]
+- [[Design a Kubernetes Cluster|Next: Design a Kubernetes Cluster]]
+
+
 ## Key Notes
 - Welcome to this guide on configuring high availability in Kubernetes. In this article, we explain what happens when a master node fails and how to set up your environment to ensure continuous operation. We focus on maintaining sufficient redundancy for the control plane components while highlighting the crucial role of each component.
 - When a master node becomes unavailable, the worker nodes and the applications running on them continue to function normally. However, if a container or pod (especially one managed by a replica set) crashes, the replication controller on the master is responsible for starting a new pod. Without a functioning master, its controllers, schedulers, and the Kube API server become unreachable, meaning you cannot manage the cluster externally with commands like kubectl or via the API.

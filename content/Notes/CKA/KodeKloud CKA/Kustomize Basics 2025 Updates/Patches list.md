@@ -4,6 +4,13 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This lesson demonstrates modifying list items in Kubernetes Deployment configurations using JSON 6902 patches and strategic merge patches.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Patches Intro|Previous: Patches Intro]]
+- [[Transformers Demo|Next: Transformers Demo]]
+
+
 ## Key Notes
 - In this lesson, we demonstrate how to modify list items in a Kubernetes Deployment configuration using both JSON 6902 patches and strategic merge patches. You can update, add, or remove containers in the deployment’s container list. The examples below illustrate how to work with list indices and container names effectively.
 - Below is the base deployment configuration defining a single container named “nginx” using the “nginx” image. Notice that the containers section is a list, indicated by the dash (-) before the container definition.

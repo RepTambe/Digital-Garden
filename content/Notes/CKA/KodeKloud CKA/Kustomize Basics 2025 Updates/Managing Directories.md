@@ -4,6 +4,13 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This guide explains how to structure Kubernetes YAML files effectively using Kustomize for streamlined management and deployment workflows.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Kustomize vs Helm|Previous: Kustomize vs Helm]]
+- [[Managing Directories Demo|Next: Managing Directories Demo]]
+
+
 ## Key Notes
 - Organizing and managing your Kubernetes manifests across multiple directories can be streamlined with Kustomize. This guide explains how to structure your YAML files effectively, simplify deployment workflows, and maintain a clean configuration hierarchy for your clusters.
 - Basic Directory Structure Without Kustomize

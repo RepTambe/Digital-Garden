@@ -4,6 +4,12 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This guide helps you select the right Kubernetes infrastructure by exploring various hosting options and deployment strategies for local and production environments.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Configure High Availability|Next: Configure High Availability]]
+
+
 ## Key Notes
 - Welcome to this informative guide on selecting the right Kubernetes infrastructure for your needs. In this article, we explore various hosting options for Kubernetes clusters, examine their unique characteristics, and provide insights into both local and production deployments. Whether you’re new to Kubernetes or looking to expand your production environment, this guide will help you make an informed decision.
 - Kubernetes can be deployed on numerous platforms—from your local machine or laptop to both physical and virtual servers hosted on-premises or in the cloud. Your choice will depend on your technical requirements, cloud ecosystem compatibility, and the type of applications you plan to run.

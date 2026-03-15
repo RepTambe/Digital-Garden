@@ -4,6 +4,13 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This article examines the challenges Kustomize addresses and explains the motivation behind its creation for managing Kubernetes configurations.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Kustomize Output|Previous: Kustomize Output]]
+- [[Kustomize vs Helm|Next: Kustomize vs Helm]]
+
+
 ## Key Notes
 - Before exploring what Kustomize is and how to use it, this article examines the challenges it addresses and explains the motivation behind its creation.
 - The Traditional Approach

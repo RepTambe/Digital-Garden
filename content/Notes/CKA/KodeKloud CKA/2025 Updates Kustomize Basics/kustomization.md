@@ -4,6 +4,13 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This article explores the Kustomize tool and the kustomization.yaml file for customizing Kubernetes resource files.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Image Transformers|Previous: Image Transformers]]
+- [[Kustomize ApiVersion Kind|Next: Kustomize ApiVersion Kind]]
+
+
 ## Key Notes
 - In this lesson, we explore the Kustomize tool and the essential kustomization.yaml file. Kustomize streamlines the customization of Kubernetes resource files without modifying the original YAML manifests. The kustomization.yaml file acts as the entry point, directing Kustomize to your Kubernetes configurations and specifying the required customizations.
 - Directory Structure and File Overview

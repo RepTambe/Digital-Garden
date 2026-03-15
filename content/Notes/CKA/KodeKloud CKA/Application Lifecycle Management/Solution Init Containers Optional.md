@@ -4,6 +4,14 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This guide provides a step-by-step lab on Kubernetes init containers, covering pod configurations, updates, and troubleshooting.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Application Lifecycle Management Section Introduction|Section Overview]]
+- [[Solution Env Variables Optional|Previous: Solution Env Variables Optional]]
+- [[Solution Multi Container Pods Optional|Next: Solution Multi Container Pods Optional]]
+
+
 ## Key Notes
 - This guide walks you through a step-by-step lab on Kubernetes init containers. You will learn how to inspect pod configurations, differentiate between regular and init containers, update pod specifications to include an init container, and troubleshoot a failing pod.
 - Identifying Pods and Their Container Configurations

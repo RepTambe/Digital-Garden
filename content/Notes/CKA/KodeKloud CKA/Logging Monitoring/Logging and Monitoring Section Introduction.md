@@ -4,6 +4,12 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This article covers logging and monitoring techniques for Kubernetes clusters and applications, focusing on performance tracking and log management.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Managing Application Logs|Next: Managing Application Logs]]
+
+
 ## Key Notes
 - Hello and welcome to this comprehensive lesson on logging and monitoring. In this session, we will explore a variety of options to effectively monitor your Kubernetes cluster components and the applications running on them.
 - We start by examining key monitoring techniques for Kubernetes clusters. You will learn how to keep track of both the cluster components and the individual applications to ensure optimal performance and rapid issue detection.

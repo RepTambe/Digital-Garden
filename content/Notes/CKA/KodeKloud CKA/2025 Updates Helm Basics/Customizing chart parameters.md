@@ -4,6 +4,13 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: Learn how to customize chart parameters during WordPress installation using Helm, including command line overrides, custom values files, and modifying built-in configurations.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[A quick note about Helm2 vs Helm3|Previous: A quick note about Helm2 vs Helm3]]
+- [[Helm charts|Next: Helm charts]]
+
+
 ## Key Notes
 - In this guide, you’ll learn how to customize chart parameters during installation with Helm. By default, when installing WordPress using the Bitnami Helm chart, the deployment leverages the default settings provided in its values.yaml file. For example, executing the command below:
 - $

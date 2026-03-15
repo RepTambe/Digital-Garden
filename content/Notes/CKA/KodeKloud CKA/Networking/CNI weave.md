@@ -4,6 +4,13 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This article provides a comprehensive guide on the Weaveworks CNI plugin, covering its architecture, functionality, and deployment in Kubernetes environments.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[CNI in kubernetes|Previous: CNI in kubernetes]]
+- [[CoreDNS in Kubernetes|Next: CoreDNS in Kubernetes]]
+
+
 ## Key Notes
 - Welcome to this comprehensive guide on the Weaveworks CNI plugin. In this lesson, we’ll explore how this solution works, its architecture, and how it compares to a custom CNI script integrated into Kubelet.
 - Previously, we examined a custom CNI script that handled networking tasks through commands similar to the following:

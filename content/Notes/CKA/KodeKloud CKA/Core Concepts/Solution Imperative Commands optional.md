@@ -4,6 +4,14 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This article provides an overview of imperative commands in Kubernetes for creating and managing pods, services, deployments, and namespaces.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Core Concepts Section Introduction|Section Overview]]
+- [[Solution Deploymentoptional|Previous: Solution Deploymentoptional]]
+- [[Solution Pods optional|Next: Solution Pods optional]]
+
+
 ## Key Notes
 - In this lesson, we guide you through imperative commands in Kubernetes. Gain practical experience creating pods, services, deployments, and namespaces imperatively—an invaluable exercise for exam preparation and day-to-day operations.
 - ─────────────────────────────

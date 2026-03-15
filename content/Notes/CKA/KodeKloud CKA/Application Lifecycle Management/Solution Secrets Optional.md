@@ -4,6 +4,14 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: Learn to work with Kubernetes Secrets by inspecting existing ones, creating a custom secret, and configuring a web application pod to use it.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Application Lifecycle Management Section Introduction|Section Overview]]
+- [[Solution Rolling update|Previous: Solution Rolling update]]
+- [[Vertical Pod Autoscaling VPA 2025 Updates|Next: Vertical Pod Autoscaling VPA 2025 Updates]]
+
+
 ## Key Notes
 - In this lab, you’ll learn how to work with Kubernetes Secrets. We’ll start by inspecting the default Namespace’s secrets, then create a custom secret for database credentials and configure a web application pod to use it.
 - Inspecting Existing Secrets

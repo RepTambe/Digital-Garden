@@ -4,6 +4,14 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This article explores the role of etcd in Kubernetes, covering deployment methods and high availability considerations.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Core Concepts Section Introduction|Section Overview]]
+- [[ETCD for Beginners|Previous: ETCD for Beginners]]
+- [[Kube API Server|Next: Kube API Server]]
+
+
 ## Key Notes
 - Welcome to this comprehensive guide on etcd in Kubernetes. In this article, we explore the critical role of etcd in storing cluster state, detail different deployment approaches, and explain high availability considerations. Whether you’re setting up a Kubernetes cluster from scratch or using kubeadm, understanding etcd is essential.
 - kubectl get

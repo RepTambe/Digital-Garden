@@ -4,6 +4,12 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This course offers comprehensive mock exams for realistic CKA exam practice in a simulated environment.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Solution CKA Mock Exam 3 Optional|Previous: Solution CKA Mock Exam 3 Optional]]
+
+
 ## Key Notes
 - Hello everyone, and welcome to the Ultimate CKA Mock Exam Series presented by Vijen Palazi from KodeKloud.
 - Before diving in, please ensure that you have completed all the prerequisite materials, including multiple mock exams and hands-on labs. If your CKA exam is approaching soon, it’s essential to review all the background content first.

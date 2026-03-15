@@ -4,6 +4,13 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This article explores Kustomize components for defining reusable configuration blocks to manage feature-specific settings across multiple overlays efficiently.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Common Transformers|Previous: Common Transformers]]
+- [[Different Types of Patches|Next: Different Types of Patches]]
+
+
 ## Key Notes
 - In this lesson, we will explore a powerful feature in Kustomize called components. Components allow you to define a reusable block of configuration logic that can be included in multiple overlays. This approach is particularly beneficial when an application supports optional features that should only be enabled in certain overlays instead of globally. By centralizing feature-specific configurations—such as Kubernetes resources, patches, config maps, and secrets—you reduce duplication and prevent configuration drift.
 - Using components provides a single source of truth for your features, ensuring that updates or changes propagate consistently across all overlays where the feature is enabled.

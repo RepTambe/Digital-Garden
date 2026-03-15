@@ -4,6 +4,14 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This guide explains how to secure secret data in Kubernetes by enabling encryption at rest.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Application Lifecycle Management Section Introduction|Section Overview]]
+- [[Configure Environment Variables in Applications|Previous: Configure Environment Variables in Applications]]
+- [[Horizontal Pod Autoscaler HPA 2025 Updates|Next: Horizontal Pod Autoscaler HPA 2025 Updates]]
+
+
 ## Key Notes
 - In this guide, we explain how to secure secret data in your Kubernetes cluster by enabling encryption at rest. We start by creating secret objects, examine how Kubernetes encodes them in etcd, and then show you how to configure the API server to encrypt these secrets.
 - Creating a Secret Object

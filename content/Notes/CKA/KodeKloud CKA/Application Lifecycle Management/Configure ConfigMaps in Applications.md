@@ -4,6 +4,14 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This article explores managing configuration data in Kubernetes using ConfigMaps for easier maintenance and scalability.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Application Lifecycle Management Section Introduction|Section Overview]]
+- [[Commands and Arguments in Kubernetes|Previous: Commands and Arguments in Kubernetes]]
+- [[Configure Environment Variables in Applications|Next: Configure Environment Variables in Applications]]
+
+
 ## Key Notes
 - In this article, we’ll explore how to externalize and manage configuration data in Kubernetes using ConfigMaps. Instead of hard-coding environment variables in each pod definition, ConfigMaps allow you to centrally manage key–value pairs, making your Kubernetes configurations easier to maintain and scale.
 - By leveraging ConfigMaps, you can separate configuration details from container images, reducing duplication and simplifying updates across multiple pods.

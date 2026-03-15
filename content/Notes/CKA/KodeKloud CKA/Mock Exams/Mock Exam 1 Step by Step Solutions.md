@@ -4,6 +4,12 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This article provides step-by-step solutions for tasks in Mock Exam 1 related to Kubernetes configurations and operations.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Mock Exam 2 Step by Step Solutions|Next: Mock Exam 2 Step by Step Solutions]]
+
+
 ## Key Notes
 - In this article, we walk through the solutions for Mock Exam 1. Each section corresponds to a specific exam question and includes a technical diagram with its original description. Follow the steps carefully to complete each task.
 - Question 1 – Create a Pod with Three Containers

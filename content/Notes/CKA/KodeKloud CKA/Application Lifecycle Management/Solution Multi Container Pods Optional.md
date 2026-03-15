@@ -4,6 +4,14 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This guide explores creating and managing multi-container pods in Kubernetes, including log shipping to Elasticsearch using a sidecar container.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Application Lifecycle Management Section Introduction|Section Overview]]
+- [[Solution Init Containers Optional|Previous: Solution Init Containers Optional]]
+- [[Solution Rolling update|Next: Solution Rolling update]]
+
+
 ## Key Notes
 - In this guide, we explore a lab exercise on multi-container pods in Kubernetes. We will inspect pods to determine the number of containers contained, create a multi-container pod, and update an existing pod by adding a sidecar container that ships logs to Elasticsearch. All diagrams have been retained in their original placements.
 - Identifying Containers in Pods

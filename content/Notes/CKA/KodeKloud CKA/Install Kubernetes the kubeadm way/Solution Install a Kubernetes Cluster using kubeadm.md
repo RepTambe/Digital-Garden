@@ -4,6 +4,12 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: Learn to install kubeadm and kubelet on control plane and worker node for setting up a Kubernetes cluster.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Introduction to Deployment with kubeadm|Previous: Introduction to Deployment with kubeadm]]
+
+
 ## Key Notes
 - In this guide, you’ll learn how to install kubeadm along with the kubelet package on both the control plane and worker node (node1). To follow along, open two terminal sessions: one for the control plane and one via SSH connected to node1.
 - Step 1: Configure Container Runtime Forwarding Rules

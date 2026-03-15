@@ -4,6 +4,13 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: Overlays in Kustomize allow customization of base Kubernetes configurations for different environments like development, staging, and production.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Managing Directories Demo|Previous: Managing Directories Demo]]
+- [[Patches Dictionary|Next: Patches Dictionary]]
+
+
 ## Key Notes
 - Overlays in Kustomize allow you to customize a base Kubernetes configuration on a per-environment basis. This method is particularly useful for environments such as development, staging, and production, where you need to apply environment-specific adjustments to shared configurations.
 - Kustomize projects are typically organized into two main sections:

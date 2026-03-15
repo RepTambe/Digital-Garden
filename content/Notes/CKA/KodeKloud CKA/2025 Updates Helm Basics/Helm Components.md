@@ -4,6 +4,13 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: Explore Helms essential components, including the CLI, charts, releases, and metadata management within a Kubernetes cluster.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Helm charts|Previous: Helm charts]]
+- [[Installation and configuration|Next: Installation and configuration]]
+
+
 ## Key Notes
 - In this lesson, you will explore the essential components of Helm and learn how they interact with a Kubernetes cluster. We’ll dive into the Helm CLI, charts, releases, and metadata management, providing a detailed look at each aspect.
 - Helm CLI and Overall Structure

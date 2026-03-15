@@ -4,6 +4,13 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This guide explains how to provision virtual machines for a Kubernetes cluster using Vagrant and VirtualBox.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Demo Deployment with Kubeadm|Previous: Demo Deployment with Kubeadm]]
+- [[Introduction to Deployment with kubeadm|Next: Introduction to Deployment with kubeadm]]
+
+
 ## Key Notes
 - In this guide, you’ll learn how to provision virtual machines for a Kubernetes cluster using Vagrant and VirtualBox. The Kubernetes environment will include one master node and two worker nodes. We use two essential tools:
 - Before you begin, ensure that both VirtualBox and Vagrant are installed on your system.

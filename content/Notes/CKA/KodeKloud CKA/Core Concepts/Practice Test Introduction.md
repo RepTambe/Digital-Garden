@@ -4,6 +4,14 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This article introduces a practice test designed to help users prepare for an exam in a realistic lab environment.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Core Concepts Section Introduction|Section Overview]]
+- [[Pods with YAML|Previous: Pods with YAML]]
+- [[ReplicaSets|Next: ReplicaSets]]
+
+
 ## Key Notes
 - Before you begin the practice test, take a moment to familiarize yourself with the practice test portal. Once the lecture is completed, you will be directed to the lab environment where you’ll complete various hands-on exercises.
 - This practice test is designed to help you prepare for the exam by testing your skills in a realistic lab setting. Please use a laptop or desktop computer with a keyboard for the best experience.

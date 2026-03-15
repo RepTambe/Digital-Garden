@@ -4,6 +4,13 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This article provides solutions and tasks for a Kubernetes mock exam, covering service accounts, pods, network policies, and kubeconfig adjustments.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Mock Exam 3 Step by Step Solutions|Previous: Mock Exam 3 Step by Step Solutions]]
+- [[Whats Next|Next: Whats Next]]
+
+
 ## Key Notes
 - Task 1: Create a Service Account, Cluster Role, and Pod
 - In this task, you will create a service account, a cluster role (with permissions to list persistent volumes), a cluster role binding, and finally, deploy a pod using the Redis image with the created service account.

@@ -4,6 +4,14 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This article explores the relationship between Docker and ContainerD, detailing their differences and the CLI tools for interacting with container runtimes.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Core Concepts Section Introduction|Section Overview]]
+- [[Deployments|Previous: Deployments]]
+- [[ETCD for Beginners|Next: ETCD for Beginners]]
+
+
 ## Key Notes
 - In this lesson, we explore the intricate relationship between Docker and ContainerD, as well as the various CLI tools that interact with container runtimes. If you’ve encountered references to Docker alongside Kubernetes or ContainerD in different articles, this guide will clarify their differences and explain when to use tools like CTR, CRICTL, or NodeController.
 - The Evolution of Container Runtimes

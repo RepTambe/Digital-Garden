@@ -4,6 +4,13 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This article discusses the importance of ApiVersion and Kind in Kustomize for managing Kubernetes resources effectively.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[kustomization|Previous: kustomization]]
+- [[Kustomize Output|Next: Kustomize Output]]
+
+
 ## Key Notes
 - When managing Kubernetes resources with Kustomize, your configuration is defined in a kustomization.yaml file. While the ApiVersion and Kind properties are technically optional—since Kustomize assigns default values—they are essential for maintaining stability, especially when updates might introduce breaking changes.
 - Below is an example of a properly configured kustomization.yaml file:

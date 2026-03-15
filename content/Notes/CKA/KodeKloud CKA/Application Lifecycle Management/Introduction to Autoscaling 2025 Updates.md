@@ -4,6 +4,14 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This article explores autoscaling in Kubernetes, focusing on Horizontal and Vertical Pod Autoscaling for the Certified Kubernetes Administrator exam.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Application Lifecycle Management Section Introduction|Section Overview]]
+- [[In place Resize of Pods 2025 Updates|Previous: In place Resize of Pods 2025 Updates]]
+- [[Multi Container Pods|Next: Multi Container Pods]]
+
+
 ## Key Notes
 - Kubernetes Autoscaling course on KodeKloud
 - Before diving into autoscaling in Kubernetes, let’s review the traditional concepts of scaling using physical servers.

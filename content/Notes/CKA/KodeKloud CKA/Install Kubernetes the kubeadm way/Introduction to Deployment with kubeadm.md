@@ -4,6 +4,13 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This article explores the kubeadm tool for automating the installation and configuration of Kubernetes clusters.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Deploy with Kubeadm Provision VMs with Vagrant|Previous: Deploy with Kubeadm Provision VMs with Vagrant]]
+- [[Solution Install a Kubernetes Cluster using kubeadm|Next: Solution Install a Kubernetes Cluster using kubeadm]]
+
+
 ## Key Notes
 - In this lesson, we explore the kubeadm tool—a powerful utility designed to bootstrap a Kubernetes cluster. kubeadm simplifies the process by automating the installation and configuration of essential Kubernetes components, such as the Kube API Server, ETCD, and controllers. It also expertly manages security and certificate handling to ensure seamless communication among all parts of the cluster.
 - Manually installing individual components on separate nodes, updating configuration files, and setting up certificates is both complex and prone to errors. With kubeadm, these tasks become streamlined and reliable.

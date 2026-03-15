@@ -4,6 +4,12 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This article explores using Kustomize transformations for managing Kubernetes configurations, including adding labels, namespaces, and modifying container images.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Patches list|Previous: Patches list]]
+
+
 ## Key Notes
 - In this lesson, we explore how to use several common transformations in Kustomize, including the image transformer. The demo utilizes a structured Kubernetes (K8s) directory setup containing two folders—one for API components and one for database components.
 - At the API level, you will find:

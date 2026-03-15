@@ -4,6 +4,14 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This article provides an overview of Kube Proxy&#x27;s role in Kubernetes networking and its function in ensuring reliable communication between pods and Services.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Core Concepts Section Introduction|Section Overview]]
+- [[Kube Controller Manager|Previous: Kube Controller Manager]]
+- [[Kube Scheduler|Next: Kube Scheduler]]
+
+
 ## Key Notes
 - Welcome to this detailed guide on Kube Proxy and its critical role in Kubernetes networking. In this article, you will learn how Kube Proxy ensures reliable communication between pods and how it enables Services to function seamlessly across your cluster.
 - Pod Networking in Kubernetes

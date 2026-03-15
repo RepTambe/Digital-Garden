@@ -4,6 +4,14 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This lesson covers managing application logs to diagnose real-time issues, focusing on login problems and order failures in a multi-container environment.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Logging and Monitoring Section Introduction|Section Overview]]
+- [[Monitor Cluster Components|Previous: Monitor Cluster Components]]
+- [[Solution Monitor Cluster Components|Next: Solution Monitor Cluster Components]]
+
+
 ## Key Notes
 - In this lesson, we will learn how to manage application logs to diagnose issues in real-time. By reviewing logs from deployed pods, you can quickly identify errors based on user reports, leading to more efficient troubleshooting and improved application stability.
 - Inspecting Application Logs for Login Issues

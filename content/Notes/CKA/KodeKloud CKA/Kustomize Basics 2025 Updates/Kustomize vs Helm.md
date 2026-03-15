@@ -4,6 +4,13 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This guide compares Helm and Kustomize for modifying Kubernetes manifests, highlighting their features, advantages, and trade-offs to help choose the best solution for projects.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Kustomize Problem Statement idealogy|Previous: Kustomize Problem Statement idealogy]]
+- [[Managing Directories|Next: Managing Directories]]
+
+
 ## Key Notes
 - Before moving forward, it’s important to examine an alternative tool to Kustomize: Helm. This guide provides a high-level overview of how Helm addresses the need to modify Kubernetes manifests on a per-environment basis. By understanding both tools and their trade-offs, you can choose the best solution for your project.
 - Helm Templating Fundamentals

@@ -4,6 +4,14 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This article examines in-place resizing of Pods in Kubernetes and explains how it can reduce disruptions during resource updates.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Application Lifecycle Management Section Introduction|Section Overview]]
+- [[2025 Updates Horizontal Pod Autoscaler HPA|Previous: 2025 Updates Horizontal Pod Autoscaler HPA]]
+- [[2025 Updates Introduction to Autoscaling|Next: 2025 Updates Introduction to Autoscaling]]
+
+
 ## Key Notes
 - In this article, we examine the in-place resizing of Pods in Kubernetes and explain how it can reduce disruptions during resource updates.
 - Understanding Resource Updates in Kubernetes

@@ -4,6 +4,13 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: Helm Charts simplify application deployment on Kubernetes by managing complex configurations through reusable instruction manuals.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Customizing chart parameters|Previous: Customizing chart parameters]]
+- [[Helm Components|Next: Helm Components]]
+
+
 ## Key Notes
 - Helm is a command-line automation tool that simplifies the deployment, upgrade, and rollback of applications on Kubernetes. Instead of manually executing numerous individual operations, Helm accepts high-level commands like “install this application” and manages all the necessary steps behind the scenes. It achieves this by reading a set of instructions defined in Helm Charts.
 - This example demonstrates the power of using Helm Charts to abstract complex Kubernetes configurations into a reusable package.

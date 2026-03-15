@@ -1,5 +1,11 @@
 # CKA - Personal Notes
 
+## Related Notes
+- [[00 - Index|CKA Index]]
+- [[CKA - Kubectl Command List]]
+- [[CKA - Kubectl Exam 20 Commands]]
+- [[CKA - Metrics Logging]]
+
 Reference: Official kubectl command conventions – https://kubernetes.io/docs/reference/kubectl/conventions/
 
 | Command                                                                             | What It Does                                           | When I Use It                                    |

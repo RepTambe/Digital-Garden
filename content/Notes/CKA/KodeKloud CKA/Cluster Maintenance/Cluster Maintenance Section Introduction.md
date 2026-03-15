@@ -4,6 +4,13 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This article explores essential cluster maintenance topics including operating system upgrades, node removal, cluster upgrade processes, and backup methodologies.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Backup and Restore Methods|Previous: Backup and Restore Methods]]
+- [[Cluster Upgrade Introduction|Next: Cluster Upgrade Introduction]]
+
+
 ## Key Notes
 - Certified Kubernetes Administrators course
 - Operating System and Node Maintenance

@@ -4,6 +4,14 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This article provides a guide on managing application logs in Kubernetes, covering logging mechanisms in Docker and Kubernetes for effective monitoring and troubleshooting.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Logging and Monitoring Section Introduction|Section Overview]]
+- [[Logging and Monitoring Section Introduction|Previous: Logging and Monitoring Section Introduction]]
+- [[Monitor Cluster Components|Next: Monitor Cluster Components]]
+
+
 ## Key Notes
 - Welcome to this comprehensive guide on managing application logs in Kubernetes. In this article, we explore various logging mechanisms, starting with Docker and moving on to Kubernetes, to help you monitor and troubleshoot your applications effectively.
 - Logging in Docker

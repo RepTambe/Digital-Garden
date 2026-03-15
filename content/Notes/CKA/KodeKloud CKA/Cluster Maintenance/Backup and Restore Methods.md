@@ -4,6 +4,13 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This guide covers backup and restore strategies for Kubernetes environments, focusing on securing deployments and critical components like etcd.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Cluster Maintenance Section Introduction|Section Overview]]
+- [[Cluster Maintenance Section Introduction|Next: Cluster Maintenance Section Introduction]]
+
+
 ## Key Notes
 - Welcome to this guide on backup and restore strategies for Kubernetes environments. In this lesson, you’ll learn how to secure your Kubernetes deployments by backing up declarative configurations, imperative resource changes, and critical cluster components such as etcd.
 - What to Back Up

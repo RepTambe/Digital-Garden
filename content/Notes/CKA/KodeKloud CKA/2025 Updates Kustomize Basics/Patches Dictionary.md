@@ -4,6 +4,13 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: Learn to update, add, and remove keys in Kubernetes deployment configurations using JSON 6902 and strategic merge patches with step-by-step examples.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Overlays|Previous: Overlays]]
+- [[Patches Intro|Next: Patches Intro]]
+
+
 ## Key Notes
 - In this lesson, you’ll learn how to update, add, and remove keys in a Kubernetes deployment configuration using both JSON 6902 patches and strategic merge patches. The step-by-step examples provided below will help you understand the process and decide which patching method best fits your configuration management needs.
 - ──────────────────────────────────────────────

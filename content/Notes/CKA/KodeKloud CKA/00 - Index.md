@@ -1,5 +1,12 @@
 # KodeKloud CKA Notes Index
 
+## Quick Notes
+- [[../00 - Index|CKA Index]]
+- [[../CKA - Kubectl Command List|CKA - Kubectl Command List]]
+- [[../CKA - Kubectl Exam 20 Commands|CKA - Kubectl Exam 20 Commands]]
+- [[../CKA - Metrics Logging|CKA - Metrics Logging]]
+- [[../CKA - Personal Notes|CKA - Personal Notes]]
+
 Generated on: 2026-02-25T00:53:20.501Z
 Pages captured: 233
 Pages failed: 0

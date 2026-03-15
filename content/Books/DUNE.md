@@ -1,3 +1,16 @@
+## Related Notes
+
+- [[Books]]
+- [[Past-Reads]]
+
+## Details
+
+- **Author**: Frank Herbert
+- **Status**: Finished
+- **Rating**: 10.10
+
+## Thoughts
+
 Magnificent.
 
 This book brought tears to my eye.

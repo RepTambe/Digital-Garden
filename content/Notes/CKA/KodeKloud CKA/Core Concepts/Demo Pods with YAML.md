@@ -4,6 +4,14 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This article demonstrates how to create a Kubernetes Pod using a YAML definition file for better control over pod specifications.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Core Concepts Section Introduction|Section Overview]]
+- [[Core Concepts Section Introduction|Previous: Core Concepts Section Introduction]]
+- [[Deployments|Next: Deployments]]
+
+
 ## Key Notes
 - In this lesson, we will create a Kubernetes Pod using a YAML definition file instead of the “kubectl run” command. This method offers more control by allowing you to define pod specifications explicitly in a file. You can choose any text editor for this task; for instance, Windows users may prefer Notepad++ over Notepad, while Linux users might opt for vim. In future sections, we will explore additional IDEs and tools to streamline YAML editing, but we will stick with the basics for now.
 - Step 1: Creating the YAML File

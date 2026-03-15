@@ -4,6 +4,13 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: Learn to update, add, and remove keys in Kubernetes Deployment configurations using JSON 6902 patches and strategic merge patches with practical examples.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Overlays|Previous: Overlays]]
+- [[Patches Intro|Next: Patches Intro]]
+
+
 ## Key Notes
 - In this article, you’ll learn how to update, add, and remove keys in a Kubernetes Deployment configuration using both JSON 6902 patches and strategic merge patches. Each example starts with a Deployment that contains a label with the key “component” set to “api”. The goal is to modify or update these labels as needed in each scenario.
 - Updating a Key in a Dictionary

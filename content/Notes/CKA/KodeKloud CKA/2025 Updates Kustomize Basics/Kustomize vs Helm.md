@@ -4,6 +4,13 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This guide offers an overview of Helms functionality to customize Kubernetes manifests for various environments while adding advanced features.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Kustomize Problem Statement idealogy|Previous: Kustomize Problem Statement idealogy]]
+- [[Managing Directories|Next: Managing Directories]]
+
+
 ## Key Notes
 - Before diving into the next section, let’s take a closer look at an alternative tool to Kustomize: Helm. This guide offers a high-level overview of Helm’s functionality to customize Kubernetes manifests for various environments while adding several advanced features.
 - Helm leverages Go templating syntax to dynamically assign values to properties within your Kubernetes manifests. Consider the following basic deployment configuration as an example:

@@ -4,6 +4,12 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This article provides a comprehensive guide on the Certified Kubernetes Administrator program, covering its importance, exam details, and preparation tips.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Course Introduction|Next: Course Introduction]]
+
+
 ## Key Notes
 - Welcome to this comprehensive guide on the Certified Kubernetes Administrator (CKA) program. In this lesson, we dive into what the CKA certification is, why it is essential in today’s tech landscape, and how you can best prepare for the exam.
 - The Rise of Kubernetes

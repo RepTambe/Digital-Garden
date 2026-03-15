@@ -4,6 +4,13 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This article explains the kustomization.yaml file used by Kustomize to manage and transform Kubernetes configuration files.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[InstallationSetup|Previous: InstallationSetup]]
+- [[Kustomize ApiVersion Kind|Next: Kustomize ApiVersion Kind]]
+
+
 ## Key Notes
 - Now that you have the Kustomize tool installed and configured, let’s explore the kustomization.yaml file in detail. This file is crucial for directing Kustomize on which Kubernetes configuration files to process and how to transform them.
 - Understanding the kustomization.yaml File

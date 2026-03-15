@@ -4,6 +4,13 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This article explains how to deploy and delete configurations using Kustomize and kubectl in Kubernetes.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Kustomize ApiVersion Kind|Previous: Kustomize ApiVersion Kind]]
+- [[Kustomize Problem Statement idealogy|Next: Kustomize Problem Statement idealogy]]
+
+
 ## Key Notes
 - kubectl get pods
 - kubectl get deployments

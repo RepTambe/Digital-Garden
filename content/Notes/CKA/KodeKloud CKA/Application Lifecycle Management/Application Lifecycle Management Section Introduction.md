@@ -4,6 +4,13 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This article covers essential aspects of application lifecycle management, including rolling updates, rollbacks, configuration methods, scaling strategies, and self-healing design fundamentals.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[2025 Updates Vertical Pod Autoscaling VPA|Previous: 2025 Updates Vertical Pod Autoscaling VPA]]
+- [[Commands and Arguments in Docker|Next: Commands and Arguments in Docker]]
+
+
 ## Key Notes
 - Hello, my name is Mumshad Mannambeth, and welcome to this lesson on application lifecycle management. In this article, we cover essential aspects such as rolling updates and rollbacks, various application configuration methods, scaling strategies, and the fundamentals of self-healing application design.
 - Many of these topics are covered in depth throughout the course. If you are already familiar with some of this material, feel free to skip ahead or review the practice tests to reinforce your knowledge.

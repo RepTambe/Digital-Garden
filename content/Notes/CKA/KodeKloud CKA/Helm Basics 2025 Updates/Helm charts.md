@@ -4,6 +4,13 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This article explores Helm Charts for managing Kubernetes applications, detailing their structure, usage, and deployment processes.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Customizing chart parameters|Previous: Customizing chart parameters]]
+- [[Helm Components|Next: Helm Components]]
+
+
 ## Key Notes
 - In this lesson, we explore Helm Charts—a powerful tool for managing Kubernetes applications. Helm simplifies tasks such as installing, upgrading, rolling back, and uninstalling applications by automating the complex steps required to achieve the desired state.
 - Helm Charts act as comprehensive instruction manuals for your deployments. Each chart is a structured collection of files that define an application’s configuration and behavior on Kubernetes. For example, the parameters in the values.yaml file enable operators to customize configurations without modifying the underlying templates.

@@ -4,6 +4,14 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This guide covers managing updates and rollbacks in Kubernetes deployments, including rollouts, versioning, deployment strategies, and practical commands for minimal downtime.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Application Lifecycle Management Section Introduction|Section Overview]]
+- [[Multi Container Pods|Previous: Multi Container Pods]]
+- [[Secrets|Next: Secrets]]
+
+
 ## Key Notes
 - Welcome to this guide on managing updates and rollbacks in Kubernetes deployments. In this article, we explore key concepts such as rollouts, versioning, and various deployment strategies. We also provide practical commands to update your deployments with minimal downtime and to revert changes when necessary.
 - This article covers the process of monitoring deployment rollouts, updating container images, and performing rollbacks using Kubernetes commands.

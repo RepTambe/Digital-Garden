@@ -1,5 +1,11 @@
 # CKA - Kubectl Exam 20 Commands
 
+## Related Notes
+- [[00 - Index|CKA Index]]
+- [[CKA - Kubectl Command List]]
+- [[CKA - Metrics Logging]]
+- [[CKA - Personal Notes]]
+
 1. `kubectl config get-contexts`
 2. `kubectl config use-context <context-name>`
 3. `kubectl config set-context --current --namespace=<ns>`

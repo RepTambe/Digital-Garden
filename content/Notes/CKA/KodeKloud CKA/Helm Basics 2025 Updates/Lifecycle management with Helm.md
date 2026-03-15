@@ -4,6 +4,13 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This article explores managing Kubernetes application lifecycles using Helm, covering releases, upgrades, and rollbacks with practical examples.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Installation and configuration|Previous: Installation and configuration]]
+- [[What is Helm|Next: What is Helm]]
+
+
 ## Key Notes
 - In this article, we explore how to effectively manage the lifecycle of Kubernetes applications using Helm. Learn how Helm handles releases, upgrades, and rollbacks through real-world examples that simplify complexity and enhance application management.
 - Creating and Managing Releases

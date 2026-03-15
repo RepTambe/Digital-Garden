@@ -4,6 +4,14 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This article explores the kubectl apply command, its internal workings, and how it manages Kubernetes object configurations declaratively.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Core Concepts Section Introduction|Section Overview]]
+- [[Kube Scheduler|Previous: Kube Scheduler]]
+- [[Kubelet|Next: Kubelet]]
+
+
 ## Key Notes
 - In this article, we explore how the kubectl apply command works and what happens internally during its execution. Using kubectl apply for declarative management of Kubernetes objects is common practice, and here we dive into details such as configuration comparisons and update processing.
 - Basic Example

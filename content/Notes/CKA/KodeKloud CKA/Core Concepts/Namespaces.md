@@ -4,6 +4,14 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This article explores Kubernetes namespaces, their role in organizing resources, and how to manage them effectively within a cluster.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Core Concepts Section Introduction|Section Overview]]
+- [[Kubelet|Previous: Kubelet]]
+- [[Pods|Next: Pods]]
+
+
 ## Key Notes
 - In this lesson, we explore the concept of namespaces in Kubernetes and how they help organize and isolate resources within your cluster.
 - Understanding Namespaces Through Analogy

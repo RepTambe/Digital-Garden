@@ -4,6 +4,12 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This lesson covers deploying ETCD in high-availability configurations, including cluster setup, data consistency, and the Raft protocol for Kubernetes resilience.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Design a Kubernetes Cluster|Previous: Design a Kubernetes Cluster]]
+
+
 ## Key Notes
 - Welcome to this lesson on deploying ETCD in a high-availability (HA) configuration. In this guide, we will review ETCD fundamentals, explain how to configure a distributed cluster, and detail how data consistency is maintained across nodes using the Raft protocol. This HA setup is a critical requirement for running Kubernetes in a resilient manner.
 - What is ETCD?

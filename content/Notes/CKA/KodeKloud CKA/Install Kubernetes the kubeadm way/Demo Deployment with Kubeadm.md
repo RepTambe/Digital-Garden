@@ -4,6 +4,12 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This guide explains how to bootstrap a Kubernetes cluster using kubeadm with a master and two worker nodes.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Deploy with Kubeadm Provision VMs with Vagrant|Next: Deploy with Kubeadm Provision VMs with Vagrant]]
+
+
 ## Key Notes
 - In this guide, we’ll walk through bootstrapping a Kubernetes cluster using kubeadm. The setup involves three virtual machines (VMs): one control plane (master) node and two worker nodes. We will review the VM network configurations, install the container runtime and Kubernetes components, initialize the control plane, deploy a pod network add-on, and finally join the worker nodes to complete the cluster.
 - 1. VM Overview and Network Interfaces

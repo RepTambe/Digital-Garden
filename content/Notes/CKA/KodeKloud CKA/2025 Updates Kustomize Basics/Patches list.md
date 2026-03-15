@@ -4,6 +4,13 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: Learn to modify Kubernetes Deployment containers by replacing, adding, and deleting items using JSON 6902 and strategic merge patches while maintaining YAML hierarchy.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Patches Intro|Previous: Patches Intro]]
+- [[Transformers Demo|Next: Transformers Demo]]
+
+
 ## Key Notes
 - In this article, you’ll learn how to modify containers within a Kubernetes Deployment by performing operations on list items. We cover how to replace, add, and delete items from the container list using both JSON 6902 patches and strategic merge patches. Every example maintains the correct YAML hierarchy and list indexing to ensure a seamless configuration update.
 - Below is the base deployment configuration used in all examples:

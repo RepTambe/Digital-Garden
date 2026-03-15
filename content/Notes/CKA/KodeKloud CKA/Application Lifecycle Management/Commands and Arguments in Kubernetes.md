@@ -4,6 +4,14 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This lesson covers configuring commands and arguments in Kubernetes pods to adjust container behaviors by overriding default settings from the Dockerfile.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Application Lifecycle Management Section Introduction|Section Overview]]
+- [[Commands and Arguments in Docker|Previous: Commands and Arguments in Docker]]
+- [[Configure ConfigMaps in Applications|Next: Configure ConfigMaps in Applications]]
+
+
 ## Key Notes
 - Welcome to this lesson on configuring commands and arguments in Kubernetes pods. In this session, we’ll learn how to adjust container behaviors by overriding default settings defined in the Dockerfile via the pod definition.
 - Previously, we built a simple Docker image—named “ubuntu-sleeper”—that executes a sleep command for a specified number of seconds. By default, running a container with this image makes it sleep for five seconds. However, you can easily change this behavior by passing a command-line argument.

@@ -4,6 +4,13 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: Helm is a package manager and release management tool designed for simplifying Kubernetes application management.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Lifecycle management with Helm|Previous: Lifecycle management with Helm]]
+- [[Working with Helm basics|Next: Working with Helm basics]]
+
+
 ## Key Notes
 - Helm is a package manager and release management tool designed for Kubernetes applications. While Kubernetes excels at orchestrating complex infrastructures, managing a multitude of interdependent YAML files for a single application can quickly become overwhelming. Consider a basic WordPress deployment, which might involve multiple Kubernetes objects such as:
 - Deployment:

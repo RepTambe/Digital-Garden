@@ -4,6 +4,13 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This lesson explains how patches enable targeted modifications of Kubernetes configurations, allowing precise updates to specific objects rather than applying global changes.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Patches Dictionary|Previous: Patches Dictionary]]
+- [[Patches list|Next: Patches list]]
+
+
 ## Key Notes
 - In this lesson, we explain how patches offer a surgical approach for modifying Kubernetes configurations. Unlike common transformers that are efficient for applying global configuration changes—such as adding labels or setting namespaces—patches allow you to target one or a few specific objects. For example, if you need to update the replica count in a particular deployment, a customized patch permits you to precisely match and change the targeted object.
 - Understanding Patch Components

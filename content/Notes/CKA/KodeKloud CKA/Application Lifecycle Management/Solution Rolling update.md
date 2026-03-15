@@ -4,6 +4,14 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This article covers rolling updates and rollbacks in Kubernetes, focusing on deployment strategies and application upgrades.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Application Lifecycle Management Section Introduction|Section Overview]]
+- [[Solution Multi Container Pods Optional|Previous: Solution Multi Container Pods Optional]]
+- [[Solution Secrets Optional|Next: Solution Secrets Optional]]
+
+
 ## Key Notes
 - In this lab, we dive into rolling updates and rollbacks in Kubernetes, with a primary focus on rolling updates. For brevity, the alias “k” is used to represent “kubectl” throughout this guide.
 - An alias has been set for kubectl:

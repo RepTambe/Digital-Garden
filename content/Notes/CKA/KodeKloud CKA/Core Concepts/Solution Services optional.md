@@ -4,6 +4,13 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This lesson covers inspecting and creating services in a Kubernetes cluster to expose a web application.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Core Concepts Section Introduction|Section Overview]]
+- [[Solution ReplicaSets optional|Previous: Solution ReplicaSets optional]]
+
+
 ## Key Notes
 - In this lesson, we will walk through the solution for the lab on Services. You will learn how to inspect different aspects of services in a Kubernetes cluster and create a service to expose a web application. This guide is designed to help you understand Kubernetes Services, their types, endpoints, and best practices for deployment.
 - Listing Kubernetes Services

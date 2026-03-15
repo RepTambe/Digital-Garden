@@ -4,6 +4,14 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This article explores the Horizontal Pod Autoscaler in Kubernetes and how it automates workload scaling, improving efficiency over manual scaling methods.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Application Lifecycle Management Section Introduction|Section Overview]]
+- [[Demo Encrypting Secret Data at Rest|Previous: Demo Encrypting Secret Data at Rest]]
+- [[In place Resize of Pods 2025 Updates|Next: In place Resize of Pods 2025 Updates]]
+
+
 ## Key Notes
 - In this article, we explore the Horizontal Pod Autoscaler (HPA) feature in Kubernetes and explain how it automates the scaling of workloads. We’ll begin by examining the manual approach to scaling an application and then show how HPA streamlines this process.
 - Manual Horizontal Scaling

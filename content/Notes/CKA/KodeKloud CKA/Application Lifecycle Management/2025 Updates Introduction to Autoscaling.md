@@ -4,6 +4,14 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This lesson explores autoscaling in Kubernetes, focusing on Horizontal and Vertical Pod Autoscaling for the CKA exam.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Application Lifecycle Management Section Introduction|Section Overview]]
+- [[2025 Updates In place Resize of Pods|Previous: 2025 Updates In place Resize of Pods]]
+- [[2025 Updates Vertical Pod Autoscaling VPA|Next: 2025 Updates Vertical Pod Autoscaling VPA]]
+
+
 ## Key Notes
 - In this lesson, we explore autoscaling in Kubernetes with a focus on exam-relevant scenarios for the CKA exam. We will cover Horizontal Pod Autoscaling (HPA) and Vertical Pod Autoscaling (VPA) while also providing the fundamental concepts necessary for a deeper understanding.
 - Kubernetes Autoscaling

@@ -4,6 +4,13 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This article explores networking configurations for master and worker nodes in a Kubernetes cluster, including required ports and verification commands.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[2025 Updates Introduction to Gateway API|Previous: 2025 Updates Introduction to Gateway API]]
+- [[CNI in kubernetes|Next: CNI in kubernetes]]
+
+
 ## Key Notes
 - In this article, we explore the networking configurations necessary for both the master and worker nodes within a Kubernetes cluster. Each node must be equipped with at least one network interface configured with an IP address. Additionally, every host should have a unique hostname and MAC address—this is especially important when creating virtual machines (VMs) by cloning existing ones.
 - Required Ports for Kubernetes Components

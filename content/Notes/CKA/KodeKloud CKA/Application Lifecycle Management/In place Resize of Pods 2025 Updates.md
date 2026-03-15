@@ -4,6 +4,14 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This guide explores in-place resizing of Pod resources to streamline updates and reduce downtime for stateful workloads without recreating the entire Pod.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Application Lifecycle Management Section Introduction|Section Overview]]
+- [[Horizontal Pod Autoscaler HPA 2025 Updates|Previous: Horizontal Pod Autoscaler HPA 2025 Updates]]
+- [[Introduction to Autoscaling 2025 Updates|Next: Introduction to Autoscaling 2025 Updates]]
+
+
 ## Key Notes
 - In this guide, we explore how to perform in-place resizing of Pod resources—a feature that streamlines updates to resource changes without recreating the entire Pod. This innovative approach reduces downtime, especially for stateful workloads, by updating resource requirements directly on the running Pods.
 - Understanding the Default Behavior

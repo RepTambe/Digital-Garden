@@ -4,6 +4,13 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: Learn to use Kustomize&#x27;s image transformer for updating Kubernetes deployment images without modifying manifests directly.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[Different Types of Patches|Previous: Different Types of Patches]]
+- [[InstallationSetup|Next: InstallationSetup]]
+
+
 ## Key Notes
 - In this article, you will learn how to use Kustomize’s image transformer to update the images used by your Kubernetes deployments without modifying your deployment manifests directly. This technique allows you to change either the entire image or just update its tag.
 - Example Deployment

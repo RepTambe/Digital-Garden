@@ -4,6 +4,12 @@ Source: https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kube
 
 Summary: This article covers basic Helm operations using the command-line interface for managing Kubernetes applications and chart repositories.
 
+## Related Notes
+- [[../00 - Index|KodeKloud CKA Index]]
+- [[../../00 - Index|CKA Index]]
+- [[What is Helm|Previous: What is Helm]]
+
+
 ## Key Notes
 - This article explains basic Helm operations using the command-line interface. When you run the Helm command without any subcommands, it provides a list of common actions and available commands.
 - For example, executing:
