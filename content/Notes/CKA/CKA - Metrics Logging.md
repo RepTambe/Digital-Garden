@@ -18,6 +18,7 @@
 - `kubectl logs <pod-name> -c <container-name> -n <namespace>`
 - `kubectl logs -f <pod-name> -n <namespace>`
 - `kubectl logs --previous <pod-name> -n <namespace>`
+- `kubectl exec webapp -- cat /log/app.log`
 
 ## Quick Reminder
 - `kubectl top` requires Metrics Server to be installed in the cluster.
