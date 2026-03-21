@@ -37,3 +37,5 @@ Summary: This guide demonstrates upgrading a Kubernetes cluster from version 1.2
 - ID_LIKE=debian
 - PRETTY_NAME=\"Ubuntu 20.04\"
 - VERSION_ID=\"20.04\"
+- Check the upgrade path before applying changes with `kubeadm upgrade plan`.
+- This verifies cluster health, current versions, and the target versions available for upgrade.
