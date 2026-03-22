@@ -2,7 +2,7 @@
 
 ## Resume File
 
-- [[ResumeOfAugustine.docx.pdf]]
+- [[Augustine_Tambe_Resume_.pdf]]
 
 ## Summary
 
