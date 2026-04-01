@@ -10,7 +10,7 @@
 - `kubectl get deployments`
 - `kubectl create -f deployment-definition.yml`
 - `kubectl apply -f deployment-definition.yml`
-
+[[CKA - Kubectl Command List]]
 ## Rollout Commands
 - `kubectl rollout status deployment/myapp-deployment`
 - `kubectl rollout history deployment/myapp-deployment`

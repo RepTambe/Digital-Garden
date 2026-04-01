@@ -3,6 +3,7 @@ My homelab infrastructure - the physical hardware, networking, and hypervisor se
 [[1 - Homelab Diagram|Homelab Diagram]]
 [[2 - Building My Homelab|Building My Homelab]]
 [[3 - Proxmox & OPNSense|Proxmox & OPNSense]]
+[[4 - 2026 Homelab/0 - Overview|2026 Homelab Overview]]
 
 ## Projects Running on This Infrastructure
 
