@@ -217,6 +217,31 @@ pre {
   }
 }
 
+// ---------- Book cover art ----------
+.book-cover {
+  float: right;
+  width: clamp(140px, 28vw, 220px);
+  margin: 0.25rem 0 1rem 1.5rem;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin: 0;
+    box-shadow:
+      0 0 0 1px color-mix(in srgb, var(--aura-violet) 30%, var(--lightgray)),
+      0 14px 28px -12px color-mix(in srgb, var(--aura-violet) 50%, transparent);
+  }
+}
+
+@media all and (max-width: 800px) {
+  .book-cover {
+    float: none;
+    margin: 0 auto 1.25rem;
+  }
+}
+
 // ---------- Homepage: currently building ----------
 .now-block {
   clear: both;

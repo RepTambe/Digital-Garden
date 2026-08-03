@@ -1,3 +1,5 @@
+<div class="book-cover"><img src="/assets/images/do-androids-dream-of-electric-sheep.jpg" alt="Do Androids Dream of Electric Sheep cover"></div>
+
 ## Related Notes
 
 - [[Books]]

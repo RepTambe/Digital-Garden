@@ -1,3 +1,5 @@
+<div class="book-cover"><img src="/assets/images/dune-butlerian-jihad.jpg" alt="Dune: The Butlerian Jihad art"></div>
+
 ## Related Notes
 
 - [[Books]]
