@@ -6,89 +6,74 @@
 
 ## Summary
 
-DevOps Engineer with a foundation in security operations and hands-on experience building Kubernetes-based platforms, infrastructure as code workflows, and GitOps-driven deployments. Background spans Terraform, Kubernetes, CI/CD, Linux, networking, and platform troubleshooting, with additional homelab experience building k3s clusters using Cilium, MetalLB, and ArgoCD.
+Hands-on platform and reliability engineer (CKA-certified) who builds and operates multi-tenant cloud infrastructure with Infrastructure as Code, GitOps, and strong observability practices. Experience supporting customer production cloud environments end to end, from Terraform-provisioned infrastructure through incident response, root-cause analysis, and blameless postmortems. Background in security engineering brings a security-minded default to platform design, IAM, and access control. Comfortable owning ambiguous problems and building automation-first solutions in fast-moving environments.
 
 ## Experience
 
 ### Versaterm
-**DevOps Engineer 1**  
-Remote  
+**DevOps Engineer I**
+Remote
 Jan 2026 - Present
 
-- Build and support infrastructure using Terraform for repeatable, environment-aware deployments.
-- Work with Kubernetes platforms to deploy, operate, and troubleshoot containerized services across engineering environments.
-- Contribute to CI/CD pipelines that improve deployment consistency, automation, and release reliability.
-- Support GitOps workflows to manage application and infrastructure changes through version-controlled configuration.
-- Partner with engineering teams to improve platform maintainability, operational visibility, and delivery efficiency.
+- Build and maintain CI/CD pipelines and deployment automation for containerized public-safety applications in a regulated SaaS environment.
+- Develop Infrastructure as Code (Terraform) modules to standardize cloud provisioning and reduce deployment friction across engineering teams.
+- Identify workflow bottlenecks and ship tooling improvements that increase developer velocity and deployment reliability.
 
 ### Arctic Wolf
-**Concierge Security Engineer 2**  
-Pleasant Grove, Utah  
+**Concierge Security Engineer II**
+Pleasant Grove, Utah
 Jul 2024 - Jan 2026
 
-- Served as a lead point of contact for client security operations, providing threat detection and response guidance.
-- Performed investigations into phishing, malware, and privilege escalation activity across client environments.
-- Coordinated with client security teams to align detection and response procedures with operational requirements.
-- Conducted security posture reviews to improve incident readiness and response effectiveness.
+- Supported customer production cloud environments (AWS and on-prem), diagnosing and remediating 100+ infrastructure and IAM misconfigurations to improve reliability and security posture.
+- Automated triage and operational workflows in Python with SIEM query optimization, reducing mean investigation time.
+- Served as a first responder for production incidents — triage, root-cause analysis, and written postmortem reporting to customers and engineering.
+- Partnered with engineering to improve logging pipelines, observability, and detection coverage across large-scale systems.
 
-**Triage Security Engineer 1**  
-Pleasant Grove, Utah  
+**Triage Engineer I**
+Pleasant Grove, Utah
 Apr 2024 - Jul 2024
 
-- Investigated security events across thousands of client environments using SIEM platforms and triaged high-volume alert queues.
-- Analyzed host and network artifacts to determine threat scope, persistence mechanisms, and possible data exfiltration.
-- Documented incident investigations and response actions in internal systems for operational continuity.
-- Authored investigation reports and supported analyst development around detection and hunting methodologies.
+- Analyzed 200+ weekly events, correlating host, network, and cloud telemetry across large-scale, multi-tenant environments.
+- Built reusable detection queries and automated investigation playbooks aligned to MITRE ATT&CK, reducing manual operational toil.
 
 ### Children's Miracle Network Hospitals
-**Security Specialist 1**  
-Salt Lake City, Utah  
+**Security Specialist**
+Salt Lake City, Utah
 Aug 2023 - Apr 2024
 
-- Managed endpoint detection and response and vulnerability management tooling to identify and remediate threats.
-- Monitored and responded to potential data loss prevention incidents involving PII, PCI, and PHI.
+- Managed endpoint security and vulnerability scanning across enterprise infrastructure in a healthcare setting, supporting compliance and operational uptime.
 
-### The Church of Jesus Christ of Latter-day Saints
-**IT Engineer Intern**  
-Salt Lake City, Utah  
-Aug 2022 - Jan 2023
+## Projects
 
-- Supported IAM operations by establishing SSO connections with partners and managing user and group directory systems.
-- Worked with SAML, OAuth, and Active Directory to maintain secure authentication workflows.
+### Kubernetes Platform Engineering Homelab
 
-## Selected Project Experience
+- Automated VM provisioning and image creation with Terraform and cloud-init on Proxmox; deployed k3s with Cilium CNI, Traefik, and MetalLB.
+- Implemented ArgoCD GitOps pipelines for declarative, drift-detected application deployment — mirroring production CI/CD practices.
+- Designed VLAN-segmented network architecture (subnets, routing, firewall policy) for workload isolation, mirroring production EKS/ECS patterns.
 
-### k3s Kubernetes Cluster
+### AI Inference Platform
 
-- Built a production-style homelab Kubernetes cluster with k3s across control plane and worker nodes.
-- Installed and configured Cilium CNI, MetalLB, Traefik, and ArgoCD to support networking, ingress, and GitOps-based deployments.
-- Established local cluster management workflows with `kubectl` and Git-based deployment practices.
-- Used the environment to deepen hands-on knowledge of Kubernetes operations, cluster networking, and platform troubleshooting.
+- Built and operated a GPU-accelerated inference platform (Ollama + Open WebUI) serving LLMs to internal users — hands-on experience supporting AI-enabled workloads.
+- Debugged container networking and service exposure to keep the AI workload reliably available.
 
 ## Certifications
 
-- CompTIA Security+
-- CompTIA Network+
-- CompTIA CySA+
-- Blue Team Level 1
+- Certified Kubernetes Administrator (CKA)
 - AWS Certified Cloud Practitioner
+- CompTIA Security+
+- CompTIA CySA+
+- CompTIA Network+
 - Hack The Box Certified Defensive Security Analyst (CDSA)
+- Blue Team Level 1 (BTL1)
+
+## Education
+
+- Brigham Young University — B.S. Bioinformatics, 2023
 
 ## Core Skills
 
-- Terraform
-- Kubernetes
-- CI/CD
-- GitOps
-- Linux
-- Networking
-- ArgoCD
-- Cilium
-- MetalLB
-- Security Operations
-- SIEM
-- Incident Response
-- EDR
-- SAML
-- OAuth
-- Active Directory
+**Cloud & Kubernetes:** AWS, Kubernetes (CKA; k3s/EKS), Docker, containerization & orchestration
+**IaC & GitOps:** Terraform (OpenTofu-compatible), ArgoCD, GitHub Actions, CI automation
+**Observability & Reliability:** Prometheus, Grafana, Splunk, Elastic, SIEM, incident response, root-cause analysis, blameless postmortems, on-call
+**Languages & Scripting:** Python, Bash, Go (familiar)
+**Systems & Networking:** Linux/Unix administration, TCP/IP, DNS, HTTP/S, load balancing, cloud security best practices, IAM
