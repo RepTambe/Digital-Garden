@@ -1,6 +1,6 @@
 I build infrastructure that is meant to be understood, operated, and improved over time.
 
-I’m a DevOps engineer with a foundation in security operations, moving deeper into platform engineering, Kubernetes, infrastructure as code, and systems design. Long term, I want to grow into MLOps engineering by combining platform fundamentals with local AI infrastructure, model-serving workflows, and production-minded operations. My background in detection and incident response still shapes how I think: reliability, visibility, and operational clarity matter as much as shipping.
+I’m a DevOps engineer with a foundation in security operations, building deeper expertise in platform engineering, Kubernetes, infrastructure as code, and systems design. I’m intentionally developing toward MLOps by combining platform fundamentals with local AI infrastructure, model-serving workflows, and production-minded operations. My background in detection and incident response still shapes how I think: reliability, visibility, and operational clarity matter as much as shipping.
 
 This site is where I document that progression. It connects the work I do professionally with the systems I build on my own time: homelab infrastructure, Kubernetes platforms, detection engineering projects, and the practical experiments that sharpen how I design and troubleshoot real environments.
 
@@ -15,7 +15,7 @@ This site is where I document that progression. It connects the work I do profes
 
 ## Current Direction
 
-Right now I’m focused on growing from a security-heavy background into a stronger platform and infrastructure engineering profile.
+Right now I’m focused on translating a security-heavy background into stronger platform, infrastructure, and MLOps-oriented engineering depth.
 
 That means building the habits and technical depth behind modern platform work:
 
@@ -24,7 +24,7 @@ That means building the habits and technical depth behind modern platform work:
 - improving deployment and operational workflows
 - learning by building systems end to end instead of only consuming them
 
-It also means deliberately moving toward MLOps. The homelab is part of that path: building local inference systems, routing AI workloads, and learning how model-serving infrastructure should be designed, operated, and scaled.
+It also means building toward MLOps in a practical way. The homelab is part of that path: building local inference systems, routing AI workloads, and learning how model-serving infrastructure should be designed, operated, and scaled.
 
 ## Professional Background
 

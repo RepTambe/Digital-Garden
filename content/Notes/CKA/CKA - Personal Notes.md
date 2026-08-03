@@ -8,6 +8,15 @@
 
 Reference: Official kubectl command conventions – https://kubernetes.io/docs/reference/kubectl/conventions/
 
+## Common Kubernetes Ports
+
+| Component | Port | Notes |
+| --- | --- | --- |
+| `kube-apiserver` | `6443` | Secure port |
+| `etcd` client | `2379` | Client port |
+| `etcd` peer | `2380` | Peer port |
+| `kubelet` | `10250` | Secure port |
+
 | Command                                                                             | What It Does                                           | When I Use It                                    |
 | ----------------------------------------------------------------------------------- | ------------------------------------------------------ | ------------------------------------------------ |
 | `kubectl run nginx-pod --image=nginx --restart=Never`                               | Creates a single Pod directly (not a Deployment).      | When the task explicitly asks for a Pod quickly. |

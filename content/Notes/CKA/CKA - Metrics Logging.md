@@ -20,7 +20,21 @@
 - `kubectl logs --previous <pod-name> -n <namespace>`
 - `kubectl exec webapp -- cat /log/app.log`
 
+## Troubleshooting Order
+- Good CKA habit: always run these in order.
+- `kubectl get pods -n <namespace>` - spot which pods are broken
+- `kubectl describe pod <pod> -n <ns>` - read the Events section
+- `kubectl logs <pod> -n <ns>` - if pod is running but misbehaving
+
+## Container Runtime Commands
+- `sudo crictl ps`
+- `sudo crictl ps -a`
+- `sudo crictl pods`
+- `sudo crictl logs <container-id>`
+- `sudo crictl inspect <container-id>`
+
 ## Quick Reminder
 - `kubectl top` requires Metrics Server to be installed in the cluster.
 - Use `kubectl top node` for node CPU and memory usage.
 - Use `kubectl logs` when you need application output for troubleshooting.
+- Use `crictl` when you need to inspect the container runtime directly on a node.
