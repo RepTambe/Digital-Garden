@@ -1,3 +1,5 @@
+<div class="hero-portrait"><img src="/assets/images/Makishima.webp" alt="Makishima Shougo reading"></div>
+
 [[Why I Read|Why I Read, Start Here]]
 
 ## Reading Lists
