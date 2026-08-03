@@ -1,4 +1,5 @@
 @use "./base.scss";
+@use "./variables.scss" as *;
 
 // ============================================================
 // Aurora dossier — a warmer, more atmospheric pass over the
@@ -197,6 +198,107 @@ pre {
   .hero-portrait {
     float: none;
     margin: 0 auto 1.25rem;
+  }
+}
+
+// ---------- Homepage: currently building ----------
+.now-block {
+  clear: both;
+  margin: 1.75rem 0 1.5rem;
+  padding: 1.1rem 1.25rem 1.3rem;
+  border: 1px solid color-mix(in srgb, var(--aura-violet) 22%, var(--lightgray));
+  border-radius: 10px;
+  background: linear-gradient(
+    160deg,
+    color-mix(in srgb, var(--aura-violet) 6%, var(--light)),
+    color-mix(in srgb, var(--aura-gold) 5%, var(--light)) 100%
+  );
+}
+
+.now-eyebrow {
+  display: block;
+  font-family: var(--codeFont);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gray);
+  margin-bottom: 0.85rem;
+}
+
+.now-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+
+  @media all and (max-width: 800px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.now-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 0.85rem 1rem 0.95rem;
+  border: 1px solid var(--lightgray);
+  border-radius: 8px;
+  background: var(--light);
+  transition:
+    transform 0.15s ease,
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    border-color: color-mix(in srgb, var(--tertiary) 55%, var(--lightgray));
+    box-shadow: 0 10px 24px -14px color-mix(in srgb, var(--aura-violet) 60%, transparent);
+    color: inherit;
+  }
+}
+
+.now-status {
+  font-family: var(--codeFont);
+  font-size: 0.65rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  width: fit-content;
+  padding: 0.12rem 0.5rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+
+  &.status-live {
+    color: color-mix(in srgb, var(--tertiary) 80%, var(--darkgray));
+    border-color: var(--tertiary);
+  }
+
+  &.status-progress {
+    color: color-mix(in srgb, var(--aura-violet) 80%, var(--darkgray));
+    border-color: var(--aura-violet);
+  }
+}
+
+.now-title {
+  font-family: var(--headerFont);
+  font-weight: $semiBoldWeight;
+  font-size: 0.95rem;
+  color: var(--dark);
+}
+
+.now-desc {
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: var(--darkgray);
+}
+
+.now-more {
+  display: inline-block;
+  margin-top: 0.9rem;
+  font-family: var(--codeFont);
+  font-size: 0.78rem;
+  color: var(--secondary);
+
+  &:hover {
+    color: var(--tertiary);
   }
 }
 
