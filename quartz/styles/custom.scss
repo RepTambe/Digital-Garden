@@ -12,6 +12,7 @@
   --aura-rose: #dd97a8;
   --aura-gold: #eeb676;
   --grain-opacity: 0.05;
+  color-scheme: light;
 }
 
 :root[data-theme="dark"],
@@ -20,6 +21,21 @@ html[saved-theme="dark"] {
   --aura-rose: #e894a8;
   --aura-gold: #f0bd7e;
   --grain-opacity: 0.09;
+  color-scheme: dark;
+}
+
+// ---------- Harden native widget chrome ----------
+// Buttons used purely as toggles (explorer folders, mobile
+// explorer, collapsible section headers) should never show
+// OS/browser native chrome — force them to inherit page styling
+// regardless of platform dark-mode heuristics.
+button {
+  appearance: none;
+  -webkit-appearance: none;
+  background: transparent;
+  border: none;
+  color: inherit;
+  font: inherit;
 }
 
 // ---------- Atmosphere: fixed aurora wash + grain ----------
@@ -41,7 +57,7 @@ body::after {
   z-index: 9998;
   opacity: var(--grain-opacity);
   mix-blend-mode: overlay;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%27140%27%20height%3D%27140%27%3E%3Cfilter%20id%3D%27n%27%3E%3CfeTurbulence%20type%3D%27fractalNoise%27%20baseFrequency%3D%270.85%27%20numOctaves%3D%272%27%20stitchTiles%3D%27stitch%27%2F%3E%3C%2Ffilter%3E%3Crect%20width%3D%27100%25%27%20height%3D%27100%25%27%20filter%3D%27url(%23n)%27%2F%3E%3C%2Fsvg%3E");
 }
 
 // ---------- Selection / scrollbar ----------
