@@ -2,88 +2,64 @@ Tags: [[0 - HomeLab]] [[0 - Projects]] [[Networking-Computer]]
 
 # 2026 Homelab Overview
 
-My 2026 homelab is a layered infrastructure environment designed to support local AI inference, media services, storage, and hands-on platform engineering work.
+**Goal:** build a production-grade internal developer platform (IDP) at home, run the way a real platform engineering team would run it.
+**Started:** July 2026
 
-The core design decision is separation of concerns. Compute, control, data, and user access each have a defined place in the system so that experimentation does not compromise stability and production-like services do not interfere with learning work. It is also the environment I am using to move toward MLOps engineering by learning how AI serving infrastructure behaves in a system that has to be designed and operated deliberately.
+The lab is not a pile of services — it's a **platform with tenants**. The platform team is me; the "tenants" are workloads (AI inference, personal projects, demo apps, and eventually the media stack). Success is measured by self-service: a new service should go from `git init` to running-in-cluster with monitoring, TLS, and CI/CD without any manual cluster surgery.
+
+## Hardware Inventory
+
+| Machine | Specs | Role | Power profile |
+| --- | --- | --- | --- |
+| Dell OptiPlex 3080 SFF | i5-10500 (6c/12t), 64GB DDR4, 256GB NVMe + 512GB SATA SSD | Proxmox host — runs the Talos cluster VMs + management VM | 24/7 (~15–25W idle) |
+| AM4 desktop | Ryzen, 32GB DDR4, RTX 4070 Ti Super (16GB VRAM) | Bare-metal GPU node — joins the cluster for AI workloads | On-demand via Wake-on-LAN |
+| HP EliteDesk 800 G4 SFF | i5-8500 (6c/6t), 32GB DDR4, 2× 4TB HDD | Standalone media server — Jellyfin + Audiobookshelf | 24/7 (~25–35W) |
+
+Estimated baseline electricity: ~$6/month (Dell + HP running 24/7, AM4 powered off when idle).
 
 ## Core Layers
 
-- AI compute layer for local GPU inference
-- Control layer for routing, reverse proxying, and orchestration
-- Data layer for media, storage, and downloads
-- Interface layer for workstation access and development
-
-## What This Environment Supports
-
-- Local-first AI inference with cloud fallback
-- Stable media services using the ARR stack
-- Safe RHCSA and Rocky Linux experimentation
-- A practical base for future platform engineering projects
-- A hands-on path into MLOps through model serving, routing, and AI infrastructure operations
-
-## Current Node Roles
-
-### AI Node
-
-Dedicated GPU compute host for model serving and inference workloads.
-
-- Platform: AM4
-- GPU: RTX 4070 Ti Super with 16 GB VRAM
-- RAM target: 64 GB
-- OS: Ubuntu Server 24.04
-- Primary services: `vLLM`, `Ollama`
-- Future service: `ComfyUI`
-
-### Control and Lab Node
-
-The control-plane host runs the gateway, virtualization layer, and practice environments used for operating system and infrastructure work.
-
-- Hardware: Optiplex 3080 SFF
-- CPU: Intel i5
-- RAM target: 32 to 64 GB
-- OS: Proxmox
-
-### Media and Storage Node
-
-A stable data platform for media serving, download automation, and photo management.
-
-- Hardware: HP Elitedesk G4
-- RAM target: 16 to 32 GB
-- Storage: 2 x 4 TB HDD plus 256 GB NVMe
-- OS: Ubuntu Server 24.04
-- Primary services: Jellyfin, Sonarr, Radarr, Prowlarr, qBittorrent, Immich
-
-### Main Workstation
-
-The workstation is the primary operator interface into the environment rather than part of the server layer itself.
-
-- Platform: AM5
-- GPU: RX 7800 XT or equivalent
-- OS: Windows with optional dual boot
-- Usage: SSH, VS Code, Parsec, gaming
+- **Compute** — GPU-backed AI inference (bare-metal Talos worker)
+- **Control plane** — Kubernetes cluster on Proxmox VMs (Talos + Cilium + ArgoCD)
+- **Data** — persistent storage, secrets, and the standalone media stack
+- **Interface** — CI/CD, developer golden paths, and self-service tooling
 
 ## Design Principles
 
-### One Machine, One Job
+1. **Git or it didn't happen.** No manual changes to the cluster — Talos has no SSH, so if a fix wasn't committed, it isn't real.
+2. **Rebuild > repair.** If a node misbehaves, replace it. Test the rebuild runbook regularly.
+3. **The media server is not a lab.** It's a household-critical appliance, not an experiment target — see [[1 - Architecture#adr-003-media-server-stays-outside-the-cluster|ADR-003]].
+4. **Document decisions, not just configs.** Every significant choice becomes an ADR.
+5. **Every phase ends in something concrete and working**, not a partial setup left "good enough."
+6. **Friction is signal.** When my own golden path annoys me, that's the platform backlog.
 
-- The AI node handles compute
-- The Optiplex handles control and experimentation
-- The Elitedesk handles data and media
+## Current Architecture Maturity
 
-### Local-First AI
+| Layer | Status |
+| --- | --- |
+| Networking (VLANs, switch/router config) | ✅ |
+| Proxmox | ✅ |
+| Terraform VM layer | ✅ |
+| Talos | ✅ |
+| Kubernetes | ✅ |
+| Cilium | ✅ |
+| GitHub | ✅ |
+| GitOps (ArgoCD) | 🟡 |
+| Secrets (SOPS/Vault) | 🟡 |
+| Observability | ⬜ |
+| Developer platform (Backstage, golden paths) | ⬜ |
+| AI platform (GPU node, LiteLLM gateway) | 🟡 |
 
-Local GPU inference is the default path. Cloud APIs are used as fallback rather than as the primary architecture.
+## What This Environment Supports
 
-### Stable Systems Stay Stable
-
-Stable services stay on stable nodes. Experimental work belongs on the lab infrastructure.
-
-### Minimal Complexity First
-
-Additional orchestration only gets introduced when it solves a real operational problem. Complexity is treated as a cost, not a milestone.
+- Local-first AI inference on a bare-metal Kubernetes GPU node, unified behind an OpenAI-compatible gateway
+- A GitOps-driven Kubernetes platform built on immutable infrastructure (Talos)
+- Stable media services isolated from the experimental cluster
+- Certification study (CKA) that doubles as hands-on build work
 
 ## Supporting Notes
 
-[[1 - Architecture|2026 Architecture]]
-[[2 - Build Roadmap|2026 Build Roadmap]]
+[[1 - Architecture|Architecture & Decisions]]
+[[2 - Build Roadmap|Build Roadmap]]
+[[3 - Running Status|Running Status]]
 [[README|GitHub README Draft]]
