@@ -2,7 +2,7 @@
 title: Welcome
 ---
 
-![[netero.png|400]]
+<div class="hero-portrait"><img src="./netero.png" alt="Netero meditating"></div>
 
 # Augustine's Digital Garden
 
