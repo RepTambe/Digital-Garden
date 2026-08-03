@@ -1,3 +1,5 @@
+<div class="book-cover"><img src="/assets/images/heart-of-darkness.jpg" alt="Heart of Darkness, Blackwood's Magazine 1899 cover"></div>
+
 ## Related Notes
 
 - [[Books]]

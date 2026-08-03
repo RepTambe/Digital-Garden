@@ -1,3 +1,5 @@
+<div class="book-cover"><img src="/assets/images/ubik.jpg" alt="Ubik first edition cover"></div>
+
 ## Related Notes
 
 - [[Books]]
