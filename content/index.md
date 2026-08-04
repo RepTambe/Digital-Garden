@@ -4,9 +4,9 @@ title: Welcome
 
 <div class="hero-portrait"><img src="./netero.png" alt="Netero meditating"></div>
 
-# Augustine's Digital Garden
+# 4ugm3nt's Digital Garden
 
-Hey, I'm Augustine. This is my personal knowledge base where I document what I'm learning and building.
+Hey, I'm 4ugm3nt. This is my personal knowledge base where I document what I'm learning and building.
 
 You'll find notes on security engineering, homelab projects, technical concepts, and books I'm reading. Think of this as my second brain — a work in progress that grows over time.
 

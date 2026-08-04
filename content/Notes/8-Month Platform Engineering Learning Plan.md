@@ -1,6 +1,6 @@
 # 🗺️ 8-Month Platform Engineering Learning Plan
 
-**Author**: Augustine Tambe
+**Author**: 4ugm3nt Tambe
 **Created**: March 4, 2026
 **Milestones**: CKA exam at end of Month 2 | RHCSA exam at Month 5 | Advanced platform skills Months 6–8
 

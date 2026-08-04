@@ -21,7 +21,6 @@ Jan 2026 - Present
 
 ### Arctic Wolf
 **Concierge Security Engineer II**
-Pleasant Grove, Utah
 Jul 2024 - Jan 2026
 
 - Supported customer production cloud environments (AWS and on-prem), diagnosing and remediating 100+ infrastructure and IAM misconfigurations to improve reliability and security posture.
@@ -30,7 +29,6 @@ Jul 2024 - Jan 2026
 - Partnered with engineering to improve logging pipelines, observability, and detection coverage across large-scale systems.
 
 **Triage Engineer I**
-Pleasant Grove, Utah
 Apr 2024 - Jul 2024
 
 - Analyzed 200+ weekly events, correlating host, network, and cloud telemetry across large-scale, multi-tenant environments.
@@ -38,7 +36,6 @@ Apr 2024 - Jul 2024
 
 ### Children's Miracle Network Hospitals
 **Security Specialist**
-Salt Lake City, Utah
 Aug 2023 - Apr 2024
 
 - Managed endpoint security and vulnerability scanning across enterprise infrastructure in a healthcare setting, supporting compliance and operational uptime.
