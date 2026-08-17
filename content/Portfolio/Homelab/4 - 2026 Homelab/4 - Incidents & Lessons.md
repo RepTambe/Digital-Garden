@@ -24,6 +24,26 @@ Real problems hit during the build, root-caused and fixed. Kept as incident-driv
 
 **Why it matters:** exclusive-resource scheduling quirks (GPUs, but also `hostPort`, some storage classes, license-limited software) are a recurring category of Kubernetes gotcha worth being able to explain.
 
+## Forcing all GPU layers (`-ngl 99`) breaks llama.cpp's VRAM auto-fit
+
+**Symptom:** bringing up `llama.cpp` with Qwen 3.8 27B at 73,728 context on the 16GB 4070 Ti Super failed with CUDA OOM at load time, even though the quant was chosen to fit.
+
+**Root cause:** the deployment explicitly pinned `-ngl 99` to force every layer onto the GPU. That override *disables* llama.cpp's own `--fit` VRAM auto-placement — instead of measuring what fits and leaving the remainder on CPU, it tried to load everything and ran out of VRAM. A second, smaller issue stacked on top: HF mode auto-loaded the BF16 multimodal projector even though this is a text/coding-only deployment.
+
+**Fix:** leave GPU layer placement to llama.cpp — `--fit on --fit-target 256`, no forced `-ngl`, plus `--no-mmproj` to skip the unnecessary projector. The model then loaded and served at 73k context with native MTP. Also had to use current draft-cache flag names (`--spec-draft-type-k/v`).
+
+**Why it matters:** a good "the tuning knob you reached for is the one fighting you" story — an override meant to *maximize* GPU usage was the exact thing preventing the runtime from fitting the model at all.
+
+## A node stuck `Booting` because the control-plane VM simply wasn't powered on
+
+**Symptom:** `am4-gpu` sat in `Booting` for 6+ minutes (normally 60–90 seconds), logging `failed to sign API server CSR ... dial tcp 10.10.20.11:50001: connect: no route to host`.
+
+**Root cause:** nothing was wrong with `am4-gpu` at all — `talos-cp-1`'s VM in Proxmox was simply not powered on, so the control plane it was trying to reach didn't exist. Powering the VM on in the Proxmox console let `am4-gpu` recover immediately.
+
+**Fix / habit:** when a node can't reach the control plane, check the control plane's own VM state directly in Proxmox before assuming the problem is on the unreachable node's side.
+
+**Why it matters:** the loudest error (a CSR-signing failure on the GPU node) pointed at the wrong machine entirely — the fault was one hop upstream, in infrastructure the failing node depends on.
+
 ## A leftover installer USB caused an intermittent, misleading boot-order race
 
 **Symptom:** after installing Talos and applying its final worker config, the node intermittently came up looking like a totally fresh, unconfigured install (DHCP IP, blank hostname, maintenance mode) — with no config changes in between, across multiple checks minutes apart.
@@ -73,3 +93,18 @@ Real problems hit during the build, root-caused and fixed. Kept as incident-driv
 **Fix:** before enabling VLAN filtering on any switch, enumerate *every* device on it — not just what's visible in the primary controller — and check for pre-existing VLAN tags that could collide with new IDs.
 
 **Why it matters:** a realistic "config drift across multiple management planes" story, and a good argument for why network segmentation projects need a full device inventory, not just a query against one controller's UI.
+
+## WireGuard-in-gluetun handshook but never passed traffic — switched to OpenVPN
+
+**Symptom:** ProtonVPN over WireGuard, run through gluetun in Docker on the media server, would establish a session (handshake succeeded, keepalives flowed) but never pass real application data — every DNS lookup, ping, and HTTP request through the tunnel timed out.
+
+**Root cause:** never definitively identified. Ruled out across 8+ Proton servers, both `:latest` and stable `:v3` images, kernelspace and userspace WireGuard, and even `network_mode: host` (removing Docker's bridge/NAT entirely). The *identical* WireGuard config worked perfectly via raw `wg-quick` outside Docker — on this same host and a second machine — which ruled out the network, ISP, and credentials. A genuine unsolved mystery specific to WireGuard-inside-gluetun-inside-Docker on this host; full log preserved in `GLUETUN_PROBLEM.md`.
+
+**Fix:** switch `VPN_TYPE` to `openvpn` with ProtonVPN's OpenVPN credentials (`+pmp` appended to the username for port forwarding). Worked immediately and has been stable since, at a negligible overhead cost for this traffic scale.
+
+**Why it matters:** knowing when to stop root-causing. The problem was reproducible, bounded, and had a working alternative one config value away — chasing it further would have been sunk cost against a stable fix. (Security footnote: a WireGuard private key was pasted in plaintext during debugging and should be treated as compromised/rotated.)
+
+## Smaller operational lessons
+
+- **`TALOSCONFIG`/`KUBECONFIG` not set in fresh shells** has caused confusion across multiple sessions — the defaults fall back to a stale `192.168.1.248` endpoint. Fix is to export both in `~/.bashrc`/`~/.zshrc`. Related gotcha: the working kubeconfig is at `~/homelab/talos-vlan20/kubeconfig-cilium-homelab` — *one directory above* `_cilium/`, not inside it, unlike the talosconfig.
+- **Pasting a large document into an interactive `ollama run` session silently stalls the model** — the default small context window plus an already-tight ~92%-full VRAM footprint leaves no room for a growing KV cache. Restart the session to reset context; for big pasted docs prefer a smaller model with more headroom.
