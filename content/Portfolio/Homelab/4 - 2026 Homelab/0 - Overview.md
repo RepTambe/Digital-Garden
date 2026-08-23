@@ -44,16 +44,20 @@ Estimated baseline electricity: ~$6/month (Dell + HP running 24/7, AM4 powered o
 | Kubernetes | ✅ |
 | Cilium | ✅ |
 | GitHub | ✅ |
-| GitOps (ArgoCD) | 🟡 |
+| GitOps (ArgoCD) | ✅ |
+| Remote access / Tailscale core path | ✅ |
+| Cilium Gateway API | 🟡 |
+| Go software artifact (Daily Brief) | 🟡 |
 | Secrets (SOPS/Vault) | 🟡 |
 | Observability | ⬜ |
 | Developer platform (Backstage, golden paths) | ⬜ |
-| AI platform (GPU node, LiteLLM gateway) | 🟡 |
+| AI platform (GPU node, LiteLLM, llama.cpp) | 🟡 |
 
 ## What This Environment Supports
 
-- Local-first AI inference on a bare-metal Kubernetes GPU node, unified behind an OpenAI-compatible gateway
+- Local-first AI inference on a bare-metal Kubernetes GPU node, unified behind an OpenAI-compatible gateway and reachable from anywhere over a private tailnet — no ports forwarded
 - A GitOps-driven Kubernetes platform built on immutable infrastructure (Talos)
+- A Go tenant application ([[3 - Running Status|Daily Brief]]) built to prove the platform from the consumer side
 - Stable media services isolated from the experimental cluster
 - Certification study (CKA) that doubles as hands-on build work
 
@@ -62,4 +66,5 @@ Estimated baseline electricity: ~$6/month (Dell + HP running 24/7, AM4 powered o
 [[1 - Architecture|Architecture & Decisions]]
 [[2 - Build Roadmap|Build Roadmap]]
 [[3 - Running Status|Running Status]]
+[[4 - Incidents & Lessons|Incidents & Lessons]]
 [[README|GitHub README Draft]]

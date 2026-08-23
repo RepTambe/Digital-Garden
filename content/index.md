@@ -21,7 +21,7 @@ You'll find notes on security engineering, homelab projects, technical concepts,
 <a class="now-card" href="./Portfolio/Homelab/4---2026-Homelab/3---Running-Status">
 <span class="now-status status-live">Live</span>
 <span class="now-title">Local AI Inference</span>
-<span class="now-desc">GPU-scheduled Ollama behind a unified LiteLLM gateway, serving real requests today.</span>
+<span class="now-desc">Qwen 3.8 27B on a GPU-scheduled llama.cpp pod, behind a LiteLLM gateway reachable privately over Tailscale.</span>
 </a>
 </div>
 <a class="now-more" href="./Portfolio/Projects/0---Projects">See all projects →</a>

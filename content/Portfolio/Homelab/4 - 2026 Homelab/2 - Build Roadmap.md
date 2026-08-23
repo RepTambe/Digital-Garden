@@ -40,12 +40,14 @@ Result: a GitOps-driven platform core using ArgoCD app-of-apps, Cilium (eBPF CNI
 
 - [x] **ArgoCD + root app-of-apps** — `homelab-root` watches `kubernetes/apps` in `RepTambe/homelab-platform`, `Synced` / `Healthy`; everything enters the cluster through Git from here on
 - [x] **First GitOps workload + self-heal proven** — `demo` app deployed entirely by Git commit; manually scaled to 3 replicas and watched Argo restore the Git-declared 1. LiteLLM and llama.cpp are now Argo-managed too
-- [x] Cilium installed via Helm — kube-proxy replacement enabled, healthy on all nodes
+- [x] Cilium v1.19.5 healthy on all four nodes with kube-proxy replacement and the L7 proxy enabled — applied as a **rendered manifest, not a live Helm release**, which changes how every future values change has to be made
+- [x] **Tailscale zero-trust access (core path)** — the Kubernetes Operator deployed *through ArgoCD*, `tag:k8s-operator`/`tag:k8s` defined in tailnet policy, a least-privilege OAuth client issued with credentials out of Git, LiteLLM exposed through a Tailscale-managed Ingress with MagicDNS + HTTPS at `https://litellm.tail33031c.ts.net`, `chief` joined and verified end-to-end, and NodePort `30400` retired
+- [x] **Gateway API readiness audited** without changing cluster networking — Cilium source-of-truth located, rendered-not-Helm confirmed, Gateway API CRDs confirmed absent
 - [ ] cert-manager with Let's Encrypt
 - [ ] ExternalDNS
 - [ ] Longhorn for persistent storage
-- [ ] Tailscale tailnet across all machines, ACLs as code
-- [ ] Gateway API with BGP-routed LoadBalancer IPs
+- [ ] Finish the Tailscale track: remaining machines joined, subnet router on the mgmt host, ACL/grant policy as code in the monorepo
+- [ ] Enable Gateway API on the existing Cilium version (CRDs → `gatewayAPI.enabled` → re-render v1.19.5 → `GatewayClass` → shared `Gateway` + first `HTTPRoute`) and settle the LB-IPAM exposure model
 - [ ] Smoke-test demo app with Gateway route + TLS + PVC, all via Git commit
 
 ## Phase 3 — Platform Services
@@ -76,13 +78,13 @@ Result: GPU scheduling enabled on a bare-metal Kubernetes node — kernel driver
 - [x] GPU proven end-to-end with a CUDA test pod (RTX 4070 Ti Super visible inside a container)
 - [x] Ollama deployed as a GPU-scheduled workload (`Recreate` strategy, `hostPath` model storage) — now scaled to 0 while llama.cpp owns the GPU
 - [x] **`llama.cpp` + CUDA deployed via ArgoCD** — upstream `server-cuda` image serving Qwen 3.8 27B at 73,728 context with native MTP; auto-fit required (forcing `-ngl 99` caused CUDA OOM)
-- [x] LiteLLM deployed as the unified OpenAI-compatible gateway, hardened + GitOps-managed, routing `qwen3.8-27b` → llama.cpp, exposed via NodePort
+- [x] LiteLLM deployed as the unified OpenAI-compatible gateway, hardened + GitOps-managed, routing `qwen3.8-27b` → llama.cpp — now ClusterIP-only behind the Tailscale HTTPS ingress
 - [ ] Node tainted/labeled so only GPU workloads schedule there
 - [ ] GPU time-slicing so multiple pods can share the card
 - [ ] vLLM — only if a real workload justifies it; llama.cpp covers the long-context/MTP coding use case for now
 - [ ] Wake-on-LAN scale-to-zero Go controller (`kube-wol-operator`) — the flagship Go artifact for this project
 
-**Phase 5a — LiteLLM gateway:** deployed and GitOps-managed with a hardened non-root image; master key rotated out of the ConfigMap into Secret `litellm-secrets`. Still to do: Postgres backing store, fully declarative secrets (Vault/ESO), per-tenant virtual keys/budgets, hosted-model fallback routing, Prometheus metrics, and an Open WebUI frontend.
+**Phase 5a — LiteLLM gateway:** deployed and GitOps-managed with a hardened non-root image; master key rotated out of the ConfigMap into Secret `litellm-secrets`; now privately exposed over the tailnet at `https://litellm.tail33031c.ts.net` with the NodePort stopgap removed. Still to do: Postgres backing store, fully declarative secrets (Vault/ESO), per-tenant virtual keys/budgets, hosted-model fallback routing, Prometheus metrics, and an Open WebUI frontend.
 
 **Phase 5b — dual-boot gaming (optional, same node):** Bazzite installed on the 2TB HDD, confirmed it doesn't disturb Talos on reboot; boot order set; Ventoy USB removed. Secure Boot MOK key enrollment still pending before the NVIDIA driver works inside Bazzite. Still untested: node showing `NotReady` while booted into the gaming OS.
 
@@ -98,11 +100,13 @@ The layer that makes this a *platform*, not just a cluster.
 - [ ] Crossplane AWS provider for a small real cloud footprint (S3, Route53, SQS)
 - [ ] Platform CLI in Go (cobra) — second Go artifact
 
-## Phase 6.5 — Daily Brief: Production Go Backend — 🔴 Not Started (design finalized)
+## Phase 6.5 — Daily Brief: Production Go Backend — 🟡 In Progress (Go fundamentals / V0.1)
 
 A real, operated Go tenant application — the deliberate answer to the gap check against *Software Engineer, Infrastructure* postings (Go depth, testing, API design), not another platform component. **Built independently for the learning value; no code merged that can't be explained line-by-line.**
 
-- Lives in its **own** repo `RepTambe/daily-brief` (separate from `homelab-platform`, which owns only deploy/config) — a clean "I built a Go service, then operated it on the platform I built" story
+- Lives in its **own** repo `RepTambe/daily-brief` — now created, with its own Go module (separate from `homelab-platform`, which owns only deploy/config) — a clean "I built a Go service, then operated it on the platform I built" story
+- **Day 1 done (Aug 17):** deliberate fundamentals rather than features — TDD red/green/refactor as a loop, table-driven tests and subtests, slices/`range`/blank identifier, string normalization with `TrimSpace`/`Join`, and composition through `Title`, `FormatItems`, and `Build`. Suite green. **Day 2:** a `Brief` struct with a failing `Brief.String()` test written first
+- **Self-imposed constraint:** no HTTP, Postgres, Kubernetes, or external APIs until structs → methods → domain modeling is genuinely understood — the point is Go depth, not a deployed toy
 - LLM synthesis calls the in-cluster LiteLLM gateway (`qwen3.8-27b`); auth from a Secret, with real timeout/retry/degradation handling
 - Build order, software-first: V0.1 local skeleton → V0.2 GitHub integration → V0.3 Postgres → V0.4 scheduler/reliability → V0.5 LLM synthesis → V0.6 ntfy delivery → V1.0 production deploy (CI/CD, Helm, ArgoCD, observability)
 - Runs locally first — platform work must not block application development
@@ -126,6 +130,9 @@ A real, operated Go tenant application — the deliberate answer to the gap chec
 | Talos / Kubernetes / Cilium | ✅ |
 | GitHub | ✅ |
 | GitOps (ArgoCD) | ✅ |
+| Remote access / Tailscale core path | ✅ |
+| Cilium Gateway API | 🟡 |
+| Go software artifact (Daily Brief) | 🟡 |
 | Secrets (SOPS/Vault) | 🟡 |
 | Observability | ⬜ |
 | Developer platform (Backstage, golden paths) | ⬜ |

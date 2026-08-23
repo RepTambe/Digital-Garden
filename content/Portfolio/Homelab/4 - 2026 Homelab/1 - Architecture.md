@@ -48,6 +48,8 @@ Static assignments on VLAN 20: `talos-cp-1` = `.11`, `talos-worker-1` = `.12`, `
 
 Firewall stance today is permissive between VLANs (no lockdown rules yet) — tightening this is a deferred Phase 2 cleanup item.
 
+**Access path.** Cluster services are not published to the LAN. Machines join a tailnet, and the Tailscale Kubernetes Operator fronts in-cluster services with MagicDNS names and real HTTPS certificates — so reaching the AI gateway from a phone off-network requires an identity, not an open port. LAN-side exposure via Cilium Gateway API + LB-IPAM is a separate, still-pending path (CRDs audited and confirmed absent; Cilium is a rendered manifest rather than a live Helm release, so enabling it means re-rendering the same v1.19.5, not upgrading).
+
 ## Repository Structure
 
 One monorepo, mirrored GitHub ↔ Gitea on the management VM:
@@ -87,8 +89,8 @@ Key ADRs — the full rationale and tradeoffs for each are logged in the build r
 - **ADR-004 — Cilium with Gateway API and LB-IPAM.** One eBPF-based stack instead of stitching together a CNI, a load-balancer, and an ingress controller separately. Gateway API is the Ingress successor.
 - **ADR-005 — GitHub Actions with self-hosted runners (ARC).** GitHub stays the public source of truth; builds execute on lab hardware via Actions Runner Controller — autoscaling, ephemeral runner pods, and caching are real platform skills.
 - **ADR-006 — GitOps via ArgoCD app-of-apps.** Humans never `kubectl apply` to a tenant namespace; everything enters the cluster through Git.
-- **ADR-007 — LiteLLM as a unified inference gateway.** One OpenAI-compatible endpoint for every caller, routing between local vLLM/Ollama and hosted APIs, with centralized keys, budgets, and failover.
-- **ADR-008 — Tailscale for remote access.** Zero port-forwarding, identity-based access, WireGuard-backed encryption; ACL policy lives in the monorepo as code.
+- **ADR-007 — LiteLLM as a unified inference gateway.** One OpenAI-compatible endpoint for every caller, routing between local `llama.cpp`/Ollama and hosted APIs, with centralized keys, budgets, and failover.
+- **ADR-008 — Tailscale for remote access.** Zero port-forwarding, identity-based access, WireGuard-backed encryption; ACL policy lives in the monorepo as code. **Now implemented for the core path** — the Tailscale Kubernetes Operator is deployed through ArgoCD and LiteLLM is served privately at `https://litellm.tail33031c.ts.net`, which let the LAN NodePort be removed entirely rather than kept as a parallel door.
 
 Incident-driven ADRs (the debugging stories worth keeping) live in [[4 - Incidents & Lessons|Incidents & Lessons]].
 
